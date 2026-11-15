@@ -1,0 +1,5 @@
+.env
+data/search_cache.json
+data/backups/
+data/*.tmp
+__pycache__/

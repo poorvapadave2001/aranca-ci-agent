@@ -1,0 +1,10 @@
+pandas
+requests
+beautifulsoup4
+feedparser
+trafilatura
+rapidfuzz
+openai
+python-dotenv
+ddgs
+tavily-python

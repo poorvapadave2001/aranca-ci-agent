@@ -1,0 +1,61 @@
+name: daily-ci
+on:
+  schedule:
+    - cron: "30 2 * * *"        # 02:30 UTC = 08:00 IST
+  workflow_dispatch: {}          # manual "Run workflow" button for the demo
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-ci
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Collect (last 2 days)
+        continue-on-error: true            # a collector failure must not block the report
+        env:
+          LOOKBACK_DAYS: "2"
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+        run: python src/collect.py
+
+      - name: Analyse new items + build report
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LLM_PROVIDERS: ${{ vars.LLM_PROVIDERS || 'groq' }}
+          REPORT_DAYS: "14"
+          LLM_BUDGET: "10"
+        run: python src/report.py
+
+      - name: Publish dashboard to docs/
+        run: |
+          mkdir -p docs
+          cp reports/latest.html docs/index.html
+          touch docs/.nojekyll
+
+      - name: Commit results
+        run: |
+          git config user.name "ci-agent"
+          git config user.email "ci-agent@users.noreply.github.com"
+          git add data/ci.db data/llm_cache2.json data/practice_leaders.json reports docs
+          if git diff --cached --quiet; then
+            echo "Nothing new to commit"
+          else
+            git commit -m "daily run $(date -u +%F)"
+            git pull --rebase origin ${{ github.ref_name }}
+            git push
+          fi

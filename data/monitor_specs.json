@@ -1,0 +1,4663 @@
+{
+ "tecnovaglobal.com": {
+  "domain": "tecnovaglobal.com",
+  "name": "Tecnova",
+  "aliases": [
+   "Tecnova",
+   "tecnovaglobal"
+  ],
+  "region": "India",
+  "regions": [
+   "India"
+  ],
+  "overlap_type": "",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC02",
+    "service": "Market Share Expansion & Growth Acceleration",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC06",
+    "service": "Market Intelligence & Competitive Benchmarking",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "",
+   "press": "",
+   "rss": "",
+   "sitemap": false
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Tecnova\" OR \"tecnovaglobal\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Tecnova\" OR \"tecnovaglobal\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Tecnova\" OR \"tecnovaglobal\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Tecnova\" OR \"tecnovaglobal\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "universalconsulting.com": {
+  "domain": "universalconsulting.com",
+  "name": "Universal Consulting",
+  "aliases": [
+   "Universal Consulting",
+   "universalconsulting"
+  ],
+  "region": "India",
+  "regions": [
+   "India",
+   "Japan"
+  ],
+  "overlap_type": "",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC03",
+    "service": "Adjacency & Business Diversification Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC08",
+    "service": "Mergers & Acquisitions Strategy & Due Diligence",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://universalconsulting.com/knowledge-ark/",
+   "press": "https://universalconsulting.com/press/",
+   "rss": "https://universalconsulting.com/feed/",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Universal Consulting\" OR \"universalconsulting\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Universal Consulting\" OR \"universalconsulting\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Universal Consulting\" OR \"universalconsulting\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Universal Consulting\" OR \"universalconsulting\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "floraison.in": {
+  "domain": "floraison.in",
+  "name": "Floraison",
+  "aliases": [
+   "Floraison",
+   "floraison"
+  ],
+  "region": "India",
+  "regions": [
+   "India"
+  ],
+  "overlap_type": "direct",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://floraison.in/resource-center/",
+   "press": "",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Floraison\" OR \"floraison\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Floraison\" OR \"floraison\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Floraison\" OR \"floraison\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Floraison\" OR \"floraison\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "anbacadvisors.com": {
+  "domain": "anbacadvisors.com",
+  "name": "Anbac Advisors",
+  "aliases": [
+   "Anbac Advisors",
+   "anbacadvisors"
+  ],
+  "region": "India",
+  "regions": [
+   "India"
+  ],
+  "overlap_type": NaN,
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://www.anbacadvisors.com/blogs/",
+   "press": "https://www.anbacadvisors.com/category/news/",
+   "rss": "https://www.anbacadvisors.com/feed/",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Anbac Advisors\" OR \"anbacadvisors\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Anbac Advisors\" OR \"anbacadvisors\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Anbac Advisors\" OR \"anbacadvisors\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Anbac Advisors\" OR \"anbacadvisors\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "researchwire.in": {
+  "domain": "researchwire.in",
+  "name": "Researchwire",
+  "aliases": [
+   "Researchwire",
+   "researchwire"
+  ],
+  "region": "India",
+  "regions": [
+   "India"
+  ],
+  "overlap_type": "",
+  "threatens": [
+   {
+    "id": "SVC06",
+    "service": "Market Intelligence & Competitive Benchmarking",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://www.researchwire.in/researchwire-2023/",
+   "press": "https://www.researchwire.in/media/",
+   "rss": "https://www.researchwire.in/feed/",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Researchwire\" OR \"researchwire\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Researchwire\" OR \"researchwire\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Researchwire\" OR \"researchwire\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Researchwire\" OR \"researchwire\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "hillpineconsulting.in": {
+  "domain": "hillpineconsulting.in",
+  "name": "Hillpine Consulting",
+  "aliases": [
+   "Hillpine Consulting",
+   "hillpineconsulting"
+  ],
+  "region": "India",
+  "regions": [
+   "India"
+  ],
+  "overlap_type": NaN,
+  "threatens": [
+   {
+    "id": "SVC08",
+    "service": "Mergers & Acquisitions Strategy & Due Diligence",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://hillpineconsulting.in#",
+   "press": "",
+   "rss": "https://hillpineconsulting.in/feed/",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Hillpine Consulting\" OR \"hillpineconsulting\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Hillpine Consulting\" OR \"hillpineconsulting\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Hillpine Consulting\" OR \"hillpineconsulting\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Hillpine Consulting\" OR \"hillpineconsulting\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "coherentmarketinsights.com": {
+  "domain": "coherentmarketinsights.com",
+  "name": "Coherentmarket Insights",
+  "aliases": [
+   "Coherentmarket Insights",
+   "coherentmarketinsights",
+   "Coherent Market Insights"
+  ],
+  "region": "India",
+  "regions": [
+   "India"
+  ],
+  "overlap_type": "direct",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC02",
+    "service": "Market Share Expansion & Growth Acceleration",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC04",
+    "service": "Sales Effectiveness & Commercial Excellence",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC05",
+    "service": "Feasibility Study & Long Range Business Planning",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC06",
+    "service": "Market Intelligence & Competitive Benchmarking",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC07",
+    "service": "B2B Voice of Customer (VoC) & Customer Analytics",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://coherentmarketinsights.com/services/consumer-insights",
+   "press": "https://coherentmarketinsights.com/media-coverage",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Coherentmarket Insights\" OR \"coherentmarketinsights\" OR \"Coherent Market Insights\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Coherentmarket Insights\" OR \"coherentmarketinsights\" OR \"Coherent Market Insights\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Coherentmarket Insights\" OR \"coherentmarketinsights\" OR \"Coherent Market Insights\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Coherentmarket Insights\" OR \"coherentmarketinsights\" OR \"Coherent Market Insights\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "rcpl.biz": {
+  "domain": "rcpl.biz",
+  "name": "RCPL",
+  "aliases": [
+   "RCPL",
+   "rcpl"
+  ],
+  "region": "India",
+  "regions": [
+   "India"
+  ],
+  "overlap_type": "direct",
+  "threatens": [
+   {
+    "id": "SVC08",
+    "service": "Mergers & Acquisitions Strategy & Due Diligence",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "",
+   "press": "",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"RCPL\" OR \"rcpl\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"RCPL\" OR \"rcpl\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"RCPL\" OR \"rcpl\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"RCPL\" OR \"rcpl\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "marcglocal.com": {
+  "domain": "marcglocal.com",
+  "name": "MARC",
+  "aliases": [
+   "MARC",
+   "marcglocal"
+  ],
+  "region": "India",
+  "regions": [
+   "India"
+  ],
+  "overlap_type": "direct",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC02",
+    "service": "Market Share Expansion & Growth Acceleration",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC04",
+    "service": "Sales Effectiveness & Commercial Excellence",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC05",
+    "service": "Feasibility Study & Long Range Business Planning",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC06",
+    "service": "Market Intelligence & Competitive Benchmarking",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC07",
+    "service": "B2B Voice of Customer (VoC) & Customer Analytics",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://marcglocal.com/services/market-research-company-in-india",
+   "press": "https://marcglocal.com/media",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"MARC\" OR \"marcglocal\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"MARC\" OR \"marcglocal\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"MARC\" OR \"marcglocal\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"MARC\" OR \"marcglocal\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "theresearchinsights.com": {
+  "domain": "theresearchinsights.com",
+  "name": "Theresearch Insights",
+  "aliases": [
+   "Theresearch Insights",
+   "theresearchinsights"
+  ],
+  "region": "India",
+  "regions": [
+   "India"
+  ],
+  "overlap_type": NaN,
+  "threatens": [
+   {
+    "id": "SVC06",
+    "service": "Market Intelligence & Competitive Benchmarking",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://www.theresearchinsights.com/research-methdology",
+   "press": "https://www.theresearchinsights.com/press-release",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Theresearch Insights\" OR \"theresearchinsights\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Theresearch Insights\" OR \"theresearchinsights\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Theresearch Insights\" OR \"theresearchinsights\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Theresearch Insights\" OR \"theresearchinsights\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "affluence.net.in": {
+  "domain": "affluence.net.in",
+  "name": "Affluence",
+  "aliases": [
+   "Affluence",
+   "affluence"
+  ],
+  "region": "India",
+  "regions": [
+   "India"
+  ],
+  "overlap_type": NaN,
+  "threatens": [
+   {
+    "id": "SVC08",
+    "service": "Mergers & Acquisitions Strategy & Due Diligence",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://affluence.net.in/publications/",
+   "press": "http://knowledge.affluence.net.in/resources/Bulletins/News_on_LLP/News_on_LLP.aspx",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Affluence\" OR \"affluence\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Affluence\" OR \"affluence\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Affluence\" OR \"affluence\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Affluence\" OR \"affluence\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "stellarix.com": {
+  "domain": "stellarix.com",
+  "name": "Stellarix",
+  "aliases": [
+   "Stellarix",
+   "stellarix"
+  ],
+  "region": "India",
+  "regions": [
+   "India"
+  ],
+  "overlap_type": "direct",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC02",
+    "service": "Market Share Expansion & Growth Acceleration",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC04",
+    "service": "Sales Effectiveness & Commercial Excellence",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC05",
+    "service": "Feasibility Study & Long Range Business Planning",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC06",
+    "service": "Market Intelligence & Competitive Benchmarking",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC07",
+    "service": "B2B Voice of Customer (VoC) & Customer Analytics",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "https://linkedin.com/company/stellarix",
+   "blog": "https://stellarix.com/customer-insights-and-segmentation/",
+   "press": "https://stellarix.com/technology-media-telecom/",
+   "rss": "https://stellarix.com/feed/",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Stellarix\" OR \"stellarix\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Stellarix\" OR \"stellarix\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Stellarix\" OR \"stellarix\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Stellarix\" OR \"stellarix\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "saspartners.com": {
+  "domain": "saspartners.com",
+  "name": "Saspartners",
+  "aliases": [
+   "Saspartners",
+   "saspartners",
+   "SAS Partners"
+  ],
+  "region": "India",
+  "regions": [
+   "India"
+  ],
+  "overlap_type": "direct",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC02",
+    "service": "Market Share Expansion & Growth Acceleration",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC04",
+    "service": "Sales Effectiveness & Commercial Excellence",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC05",
+    "service": "Feasibility Study & Long Range Business Planning",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC06",
+    "service": "Market Intelligence & Competitive Benchmarking",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC07",
+    "service": "B2B Voice of Customer (VoC) & Customer Analytics",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://saspartners.com/sas/pre-entry/#marketresearch",
+   "press": "https://saspartners.com/newsletters/",
+   "rss": "https://saspartners.com/feed/",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Saspartners\" OR \"saspartners\" OR \"SAS Partners\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Saspartners\" OR \"saspartners\" OR \"SAS Partners\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Saspartners\" OR \"saspartners\" OR \"SAS Partners\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Saspartners\" OR \"saspartners\" OR \"SAS Partners\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "cia-glocal.com": {
+  "domain": "cia-glocal.com",
+  "name": "CIA-GLOCAL VENTURE LLP",
+  "aliases": [
+   "CIA-GLOCAL VENTURE LLP",
+   "cia-glocal"
+  ],
+  "region": "India",
+  "regions": [
+   "India"
+  ],
+  "overlap_type": "direct",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://cia-glocal.com#",
+   "press": "",
+   "rss": "https://www.cia-glocal.com/feed/",
+   "sitemap": false
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"CIA-GLOCAL VENTURE LLP\" OR \"cia-glocal\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"CIA-GLOCAL VENTURE LLP\" OR \"cia-glocal\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"CIA-GLOCAL VENTURE LLP\" OR \"cia-glocal\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"CIA-GLOCAL VENTURE LLP\" OR \"cia-glocal\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "medianresearch.in": {
+  "domain": "medianresearch.in",
+  "name": "Median Research",
+  "aliases": [
+   "Median Research",
+   "medianresearch"
+  ],
+  "region": "India",
+  "regions": [
+   "India"
+  ],
+  "overlap_type": NaN,
+  "threatens": [
+   {
+    "id": "SVC06",
+    "service": "Market Intelligence & Competitive Benchmarking",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://www.medianresearch.in/blogs/",
+   "press": "https://www.medianresearch.in/contact-median-research-for-market-research-solutions/",
+   "rss": "https://www.medianresearch.in/feed/",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Median Research\" OR \"medianresearch\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Median Research\" OR \"medianresearch\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Median Research\" OR \"medianresearch\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Median Research\" OR \"medianresearch\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "industryarc.com": {
+  "domain": "industryarc.com",
+  "name": "IndustryARC™",
+  "aliases": [
+   "IndustryARC™",
+   "industryarc"
+  ],
+  "region": "India",
+  "regions": [
+   "India"
+  ],
+  "overlap_type": "adjacent",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://industryarc.com/domain/2/agriculture-market-research",
+   "press": "https://industryarc.com/press-releases",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"IndustryARC™\" OR \"industryarc\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"IndustryARC™\" OR \"industryarc\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"IndustryARC™\" OR \"industryarc\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"IndustryARC™\" OR \"industryarc\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "taglobalgroup.com": {
+  "domain": "taglobalgroup.com",
+  "name": "T&A Consulting",
+  "aliases": [
+   "T&A Consulting",
+   "taglobalgroup"
+  ],
+  "region": "India",
+  "regions": [
+   "India"
+  ],
+  "overlap_type": "direct",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC02",
+    "service": "Market Share Expansion & Growth Acceleration",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC04",
+    "service": "Sales Effectiveness & Commercial Excellence",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC05",
+    "service": "Feasibility Study & Long Range Business Planning",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC06",
+    "service": "Market Intelligence & Competitive Benchmarking",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC07",
+    "service": "B2B Voice of Customer (VoC) & Customer Analytics",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://taglobalgroup.com/services/research-market-entry-development/",
+   "press": "https://taglobalgroup.com/insights/#news-sec",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"T&A Consulting\" OR \"taglobalgroup\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"T&A Consulting\" OR \"taglobalgroup\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"T&A Consulting\" OR \"taglobalgroup\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"T&A Consulting\" OR \"taglobalgroup\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "stratefix.com": {
+  "domain": "stratefix.com",
+  "name": "Stratefix",
+  "aliases": [
+   "Stratefix",
+   "stratefix"
+  ],
+  "region": "India",
+  "regions": [
+   "India"
+  ],
+  "overlap_type": "direct",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC02",
+    "service": "Market Share Expansion & Growth Acceleration",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC04",
+    "service": "Sales Effectiveness & Commercial Excellence",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC05",
+    "service": "Feasibility Study & Long Range Business Planning",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC06",
+    "service": "Market Intelligence & Competitive Benchmarking",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC07",
+    "service": "B2B Voice of Customer (VoC) & Customer Analytics",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "https://www.linkedin.com/company/stratefix-consulting/ ",
+   "blog": "https://stratefix.com/solutions/market-research/",
+   "press": "https://stratefix.com/public-media-relations/",
+   "rss": "https://stratefix.com/feed/",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Stratefix\" OR \"stratefix\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Stratefix\" OR \"stratefix\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Stratefix\" OR \"stratefix\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Stratefix\" OR \"stratefix\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "knmindia.com": {
+  "domain": "knmindia.com",
+  "name": "Knmindia",
+  "aliases": [
+   "Knmindia",
+   "knmindia"
+  ],
+  "region": "India",
+  "regions": [
+   "India"
+  ],
+  "overlap_type": "direct",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC02",
+    "service": "Market Share Expansion & Growth Acceleration",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC04",
+    "service": "Sales Effectiveness & Commercial Excellence",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC05",
+    "service": "Feasibility Study & Long Range Business Planning",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC06",
+    "service": "Market Intelligence & Competitive Benchmarking",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC07",
+    "service": "B2B Voice of Customer (VoC) & Customer Analytics",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "https://www.linkedin.com/company/knm-management-advisory-services-pvt-ltd-",
+   "blog": "https://knmindia.com/blogs/",
+   "press": "https://knmindia.com/news-updates/",
+   "rss": "https://knmindia.com/feed/",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Knmindia\" OR \"knmindia\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Knmindia\" OR \"knmindia\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Knmindia\" OR \"knmindia\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Knmindia\" OR \"knmindia\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "jaydesai.com": {
+  "domain": "jaydesai.com",
+  "name": "Jay Desai",
+  "aliases": [
+   "Jay Desai",
+   "jaydesai"
+  ],
+  "region": "India",
+  "regions": [
+   "India"
+  ],
+  "overlap_type": "direct",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC02",
+    "service": "Market Share Expansion & Growth Acceleration",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC04",
+    "service": "Sales Effectiveness & Commercial Excellence",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC05",
+    "service": "Feasibility Study & Long Range Business Planning",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC06",
+    "service": "Market Intelligence & Competitive Benchmarking",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC07",
+    "service": "B2B Voice of Customer (VoC) & Customer Analytics",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://www.jaydesai.com/perspectives",
+   "press": "",
+   "rss": "https://www.jaydesai.com/blog-feed.xml",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Jay Desai\" OR \"jaydesai\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Jay Desai\" OR \"jaydesai\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Jay Desai\" OR \"jaydesai\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Jay Desai\" OR \"jaydesai\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "wazir.in": {
+  "domain": "wazir.in",
+  "name": "Wazir",
+  "aliases": [
+   "Wazir",
+   "wazir"
+  ],
+  "region": "India",
+  "regions": [
+   "India"
+  ],
+  "overlap_type": "direct",
+  "threatens": [],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://wazir.in/reports/",
+   "press": "",
+   "rss": "https://wazir.in/feed/",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Wazir\" OR \"wazir\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Wazir\" OR \"wazir\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Wazir\" OR \"wazir\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Wazir\" OR \"wazir\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "bod.consulting": {
+  "domain": "bod.consulting",
+  "name": "BOD Group",
+  "aliases": [
+   "BOD Group",
+   "bod"
+  ],
+  "region": "India",
+  "regions": [
+   "India"
+  ],
+  "overlap_type": "direct",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC02",
+    "service": "Market Share Expansion & Growth Acceleration",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC04",
+    "service": "Sales Effectiveness & Commercial Excellence",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC05",
+    "service": "Feasibility Study & Long Range Business Planning",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC06",
+    "service": "Market Intelligence & Competitive Benchmarking",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC07",
+    "service": "B2B Voice of Customer (VoC) & Customer Analytics",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "https://in.linkedin.com/company/bodconsulting",
+   "blog": "",
+   "press": "https://bod.consulting#",
+   "rss": "https://bod-group.com/feed/",
+   "sitemap": false
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"BOD Group\" OR \"bod\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"BOD Group\" OR \"bod\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"BOD Group\" OR \"bod\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"BOD Group\" OR \"bod\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "brandessenceresearch.com": {
+  "domain": "brandessenceresearch.com",
+  "name": "Brandessence Research",
+  "aliases": [
+   "Brandessence Research",
+   "brandessenceresearch"
+  ],
+  "region": "India",
+  "regions": [
+   "India"
+  ],
+  "overlap_type": "adjacent",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "https://www.linkedin.com/company/brand-essence-market-research-and-consultancy",
+   "blog": "https://brandessenceresearch.com/Blogs",
+   "press": "https://brandessenceresearch.com/Category/technology-and-media",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Brandessence Research\" OR \"brandessenceresearch\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Brandessence Research\" OR \"brandessenceresearch\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Brandessence Research\" OR \"brandessenceresearch\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Brandessence Research\" OR \"brandessenceresearch\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "martlenz.com": {
+  "domain": "martlenz.com",
+  "name": "Martlenz",
+  "aliases": [
+   "Martlenz",
+   "martlenz"
+  ],
+  "region": "India",
+  "regions": [
+   "India"
+  ],
+  "overlap_type": "adjacent",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://www.martlenz.com/blog",
+   "press": "https://www.martlenz.com/press-releases",
+   "rss": "https://www.martlenz.com/blog-feed.xml",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Martlenz\" OR \"martlenz\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Martlenz\" OR \"martlenz\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Martlenz\" OR \"martlenz\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Martlenz\" OR \"martlenz\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "bearingpoint.com": {
+  "domain": "bearingpoint.com",
+  "name": "BearingPoint India",
+  "aliases": [
+   "BearingPoint India",
+   "bearingpoint"
+  ],
+  "region": "India",
+  "regions": [
+   "India"
+  ],
+  "overlap_type": "",
+  "threatens": [],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://bearingpoint.com/en/about-us/global-reach/",
+   "press": "https://bearingpoint.com/en/about-us/news-and-media/",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"BearingPoint India\" OR \"bearingpoint\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"BearingPoint India\" OR \"bearingpoint\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"BearingPoint India\" OR \"bearingpoint\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"BearingPoint India\" OR \"bearingpoint\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "xibcapital.com": {
+  "domain": "xibcapital.com",
+  "name": "Xibcapital",
+  "aliases": [
+   "Xibcapital",
+   "xibcapital"
+  ],
+  "region": "Japan",
+  "regions": [
+   "Japan"
+  ],
+  "overlap_type": "",
+  "threatens": [
+   {
+    "id": "SVC08",
+    "service": "Mergers & Acquisitions Strategy & Due Diligence",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "",
+   "press": "https://www.xibcapital.com/news/",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Xibcapital\" OR \"xibcapital\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Xibcapital\" OR \"xibcapital\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Xibcapital\" OR \"xibcapital\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Xibcapital\" OR \"xibcapital\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "yamada-partners.jp": {
+  "domain": "yamada-partners.jp",
+  "name": "Yamada & Partners",
+  "aliases": [
+   "Yamada & Partners",
+   "yamada-partners"
+  ],
+  "region": "Japan",
+  "regions": [
+   "Japan"
+  ],
+  "overlap_type": "direct",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC08",
+    "service": "Mergers & Acquisitions Strategy & Due Diligence",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC05",
+    "service": "Feasibility Study & Long Range Business Planning",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://www.yamada-partners.jp/insight?hsLang=ja-jp",
+   "press": "https://yamada-partners.jp/tax-topics/newsletter-s261104?hsLang=ja-jp",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Yamada & Partners\" OR \"yamada-partners\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Yamada & Partners\" OR \"yamada-partners\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Yamada & Partners\" OR \"yamada-partners\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Yamada & Partners\" OR \"yamada-partners\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "san-ten.com": {
+  "domain": "san-ten.com",
+  "name": "San-Ten Consulting",
+  "aliases": [
+   "San-Ten Consulting",
+   "san-ten"
+  ],
+  "region": "Japan",
+  "regions": [
+   "Japan"
+  ],
+  "overlap_type": "",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC04",
+    "service": "Sales Effectiveness & Commercial Excellence",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://www.san-ten.com/publications",
+   "press": "https://www.san-ten.com/blog",
+   "rss": "https://www.san-ten.com/blog-feed.xml",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"San-Ten Consulting\" OR \"san-ten\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"San-Ten Consulting\" OR \"san-ten\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"San-Ten Consulting\" OR \"san-ten\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"San-Ten Consulting\" OR \"san-ten\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "wellbearma.com": {
+  "domain": "wellbearma.com",
+  "name": "WWellbear INC",
+  "aliases": [
+   "WWellbear INC",
+   "wellbearma"
+  ],
+  "region": "Japan",
+  "regions": [
+   "Japan"
+  ],
+  "overlap_type": "",
+  "threatens": [
+   {
+    "id": "SVC08",
+    "service": "Mergers & Acquisitions Strategy & Due Diligence",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "",
+   "press": "https://wellbearma.com/news/",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"WWellbear INC\" OR \"wellbearma\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"WWellbear INC\" OR \"wellbearma\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"WWellbear INC\" OR \"wellbearma\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"WWellbear INC\" OR \"wellbearma\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "lyndonadvisory.com": {
+  "domain": "lyndonadvisory.com",
+  "name": "Lyndon Advisory",
+  "aliases": [
+   "Lyndon Advisory",
+   "lyndonadvisory"
+  ],
+  "region": "Japan",
+  "regions": [
+   "Japan"
+  ],
+  "overlap_type": "",
+  "threatens": [
+   {
+    "id": "SVC08",
+    "service": "Mergers & Acquisitions Strategy & Due Diligence",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://lyndonadvisory.com/blog",
+   "press": "",
+   "rss": "https://lyndonadvisory.com/rss.xml",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Lyndon Advisory\" OR \"lyndonadvisory\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Lyndon Advisory\" OR \"lyndonadvisory\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Lyndon Advisory\" OR \"lyndonadvisory\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Lyndon Advisory\" OR \"lyndonadvisory\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "quinlanpartners.com": {
+  "domain": "quinlanpartners.com",
+  "name": "Quinlanpartners",
+  "aliases": [
+   "Quinlanpartners",
+   "quinlanpartners"
+  ],
+  "region": "Japan",
+  "regions": [
+   "Japan"
+  ],
+  "overlap_type": "",
+  "threatens": [
+   {
+    "id": "SVC06",
+    "service": "Market Intelligence & Competitive Benchmarking",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC08",
+    "service": "Mergers & Acquisitions Strategy & Due Diligence",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://quinlanpartners.com/insights",
+   "press": "https://quinlanpartners.com/news",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Quinlanpartners\" OR \"quinlanpartners\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Quinlanpartners\" OR \"quinlanpartners\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Quinlanpartners\" OR \"quinlanpartners\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Quinlanpartners\" OR \"quinlanpartners\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "xone-consulting.co.jp": {
+  "domain": "xone-consulting.co.jp",
+  "name": "Xone Consulting",
+  "aliases": [
+   "Xone Consulting",
+   "xone-consulting"
+  ],
+  "region": "Japan",
+  "regions": [
+   "Japan"
+  ],
+  "overlap_type": "direct",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC08",
+    "service": "Mergers & Acquisitions Strategy & Due Diligence",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC10",
+    "service": "Business Transformation & PMO Advisory",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "",
+   "press": "https://www.xone-consulting.co.jp/news/",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Xone Consulting\" OR \"xone-consulting\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Xone Consulting\" OR \"xone-consulting\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Xone Consulting\" OR \"xone-consulting\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Xone Consulting\" OR \"xone-consulting\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "ycp.com": {
+  "domain": "ycp.com",
+  "name": "YCP Group",
+  "aliases": [
+   "YCP Group",
+   "ycp"
+  ],
+  "region": "Japan",
+  "regions": [
+   "Japan"
+  ],
+  "overlap_type": "direct",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC02",
+    "service": "Market Share Expansion & Growth Acceleration",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC05",
+    "service": "Feasibility Study & Long Range Business Planning",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC10",
+    "service": "Business Transformation & PMO Advisory",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://ycp.com/industries/energy-and-natural-resources",
+   "press": "https://ycp.com/industries/technology-media-telecommunications",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"YCP Group\" OR \"ycp\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"YCP Group\" OR \"ycp\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"YCP Group\" OR \"ycp\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"YCP Group\" OR \"ycp\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "jri.co.jp": {
+  "domain": "jri.co.jp",
+  "name": "Jri",
+  "aliases": [
+   "Jri",
+   "jri"
+  ],
+  "region": "Japan",
+  "regions": [
+   "Japan"
+  ],
+  "overlap_type": "direct",
+  "threatens": [],
+  "sources": {
+   "linkedin": "",
+   "blog": "",
+   "press": "",
+   "rss": "",
+   "sitemap": false
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Jri\" OR \"jri\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Jri\" OR \"jri\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Jri\" OR \"jri\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Jri\" OR \"jri\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "mindmelt.jp": {
+  "domain": "mindmelt.jp",
+  "name": "Mindmelt",
+  "aliases": [
+   "Mindmelt",
+   "mindmelt",
+   "Mind Melt"
+  ],
+  "region": "Japan",
+  "regions": [
+   "Japan"
+  ],
+  "overlap_type": "direct",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://mindmelt.jp/insights/japanese-b2b-trust-building",
+   "press": "",
+   "rss": "https://mindmelt.jp/feed.xml",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Mindmelt\" OR \"mindmelt\" OR \"Mind Melt\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Mindmelt\" OR \"mindmelt\" OR \"Mind Melt\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Mindmelt\" OR \"mindmelt\" OR \"Mind Melt\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Mindmelt\" OR \"mindmelt\" OR \"Mind Melt\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "nihonium.io": {
+  "domain": "nihonium.io",
+  "name": "Nihonium",
+  "aliases": [
+   "Nihonium",
+   "nihonium"
+  ],
+  "region": "Japan",
+  "regions": [
+   "Japan"
+  ],
+  "overlap_type": "adjacent",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://nihonium.io/blog/",
+   "press": "",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Nihonium\" OR \"nihonium\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Nihonium\" OR \"nihonium\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Nihonium\" OR \"nihonium\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Nihonium\" OR \"nihonium\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "yano.co.jp": {
+  "domain": "yano.co.jp",
+  "name": "Yano",
+  "aliases": [
+   "Yano",
+   "yano"
+  ],
+  "region": "Japan",
+  "regions": [
+   "Japan"
+  ],
+  "overlap_type": NaN,
+  "threatens": [
+   {
+    "id": "SVC06",
+    "service": "Market Intelligence & Competitive Benchmarking",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://www.yano.co.jp/research/",
+   "press": "https://www.yano.co.jp/announce/beginner.html",
+   "rss": "https://www.yano.co.jp/announce/rss.php",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Yano\" OR \"yano\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Yano\" OR \"yano\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Yano\" OR \"yano\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Yano\" OR \"yano\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "astrisadvisory.com": {
+  "domain": "astrisadvisory.com",
+  "name": "会社情報｜Astris Advisory Japan KK",
+  "aliases": [
+   "会社情報｜Astris Advisory Japan KK",
+   "astrisadvisory"
+  ],
+  "region": "Japan",
+  "regions": [
+   "Japan"
+  ],
+  "overlap_type": "direct",
+  "threatens": [],
+  "sources": {
+   "linkedin": "https://www.linkedin.com/company/astrisadvisoryjapan",
+   "blog": "https://corporateresearch.astrisadvisory.com",
+   "press": "https://www.astrisadvisory.com/news",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"会社情報｜Astris Advisory Japan KK\" OR \"astrisadvisory\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"会社情報｜Astris Advisory Japan KK\" OR \"astrisadvisory\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"会社情報｜Astris Advisory Japan KK\" OR \"astrisadvisory\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"会社情報｜Astris Advisory Japan KK\" OR \"astrisadvisory\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "kuno-cpa.co.jp": {
+  "domain": "kuno-cpa.co.jp",
+  "name": "Kuno Cpa",
+  "aliases": [
+   "Kuno Cpa",
+   "kuno-cpa"
+  ],
+  "region": "Japan",
+  "regions": [
+   "Japan"
+  ],
+  "overlap_type": "direct",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC08",
+    "service": "Mergers & Acquisitions Strategy & Due Diligence",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://kuno-cpa.co.jp#",
+   "press": "https://kuno-cpa.co.jp/newsletter-form/",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Kuno Cpa\" OR \"kuno-cpa\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Kuno Cpa\" OR \"kuno-cpa\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Kuno Cpa\" OR \"kuno-cpa\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Kuno Cpa\" OR \"kuno-cpa\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "valonaintelligence.com": {
+  "domain": "valonaintelligence.com",
+  "name": "Valonaintelligence",
+  "aliases": [
+   "Valonaintelligence",
+   "valonaintelligence"
+  ],
+  "region": "Japan",
+  "regions": [
+   "Japan"
+  ],
+  "overlap_type": NaN,
+  "threatens": [
+   {
+    "id": "SVC06",
+    "service": "Market Intelligence & Competitive Benchmarking",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://valonaintelligence.com/market-intelligence-software/market-research-tool",
+   "press": "https://valonaintelligence.com/market-intelligence-software/insight-newsletter",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Valonaintelligence\" OR \"valonaintelligence\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Valonaintelligence\" OR \"valonaintelligence\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Valonaintelligence\" OR \"valonaintelligence\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Valonaintelligence\" OR \"valonaintelligence\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "dbj.jp": {
+  "domain": "dbj.jp",
+  "name": "Dbj",
+  "aliases": [
+   "Dbj",
+   "dbj"
+  ],
+  "region": "Japan",
+  "regions": [
+   "Japan"
+  ],
+  "overlap_type": NaN,
+  "threatens": [
+   {
+    "id": "SVC08",
+    "service": "Mergers & Acquisitions Strategy & Due Diligence",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "",
+   "press": "",
+   "rss": "",
+   "sitemap": false
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Dbj\" OR \"dbj\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Dbj\" OR \"dbj\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Dbj\" OR \"dbj\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Dbj\" OR \"dbj\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "tanabeconsulting.co.jp": {
+  "domain": "tanabeconsulting.co.jp",
+  "name": "Tanabeconsulting",
+  "aliases": [
+   "Tanabeconsulting",
+   "tanabeconsulting"
+  ],
+  "region": "Japan",
+  "regions": [
+   "Japan"
+  ],
+  "overlap_type": NaN,
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC02",
+    "service": "Market Share Expansion & Growth Acceleration",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC04",
+    "service": "Sales Effectiveness & Commercial Excellence",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC05",
+    "service": "Feasibility Study & Long Range Business Planning",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC07",
+    "service": "B2B Voice of Customer (VoC) & Customer Analytics",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC09",
+    "service": "New Product Development & Innovation Strategy",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "",
+   "press": "",
+   "rss": "",
+   "sitemap": false
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Tanabeconsulting\" OR \"tanabeconsulting\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Tanabeconsulting\" OR \"tanabeconsulting\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Tanabeconsulting\" OR \"tanabeconsulting\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Tanabeconsulting\" OR \"tanabeconsulting\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "sharedresearch.jp": {
+  "domain": "sharedresearch.jp",
+  "name": "Shared Research",
+  "aliases": [
+   "Shared Research",
+   "sharedresearch"
+  ],
+  "region": "Japan",
+  "regions": [
+   "Japan"
+  ],
+  "overlap_type": NaN,
+  "threatens": [
+   {
+    "id": "SVC06",
+    "service": "Market Intelligence & Competitive Benchmarking",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://sharedresearch.jp/en",
+   "press": "",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Shared Research\" OR \"sharedresearch\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Shared Research\" OR \"sharedresearch\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Shared Research\" OR \"sharedresearch\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Shared Research\" OR \"sharedresearch\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "datamintelligence.com": {
+  "domain": "datamintelligence.com",
+  "name": "Datamintelligence",
+  "aliases": [
+   "Datamintelligence",
+   "datamintelligence"
+  ],
+  "region": "Japan",
+  "regions": [
+   "Japan"
+  ],
+  "overlap_type": NaN,
+  "threatens": [
+   {
+    "id": "SVC06",
+    "service": "Market Intelligence & Competitive Benchmarking",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "https://www.linkedin.com/company/datam-intelligence/mycompany",
+   "blog": "https://datamintelligence.com/solutions#voice-of-customer-research",
+   "press": "https://datamintelligence.com/solutions#ma-funding-investment-and-news-tickers",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Datamintelligence\" OR \"datamintelligence\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Datamintelligence\" OR \"datamintelligence\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Datamintelligence\" OR \"datamintelligence\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Datamintelligence\" OR \"datamintelligence\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "nirjix.com": {
+  "domain": "nirjix.com",
+  "name": "NirjiX Insights",
+  "aliases": [
+   "NirjiX Insights",
+   "nirjix"
+  ],
+  "region": "Japan",
+  "regions": [
+   "Japan"
+  ],
+  "overlap_type": "adjacent",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC08",
+    "service": "Mergers & Acquisitions Strategy & Due Diligence",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC10",
+    "service": "Business Transformation & PMO Advisory",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "https://www.linkedin.com/company/nirjix",
+   "blog": "https://nirjix.com/insights",
+   "press": "",
+   "rss": "https://nirjix.com/feed.xml",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"NirjiX Insights\" OR \"nirjix\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"NirjiX Insights\" OR \"nirjix\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"NirjiX Insights\" OR \"nirjix\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"NirjiX Insights\" OR \"nirjix\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "insight-eye.org": {
+  "domain": "insight-eye.org",
+  "name": "Insight Eye Arabia",
+  "aliases": [
+   "Insight Eye Arabia",
+   "insight-eye"
+  ],
+  "region": "KSA",
+  "regions": [
+   "KSA"
+  ],
+  "overlap_type": "",
+  "threatens": [
+   {
+    "id": "SVC06",
+    "service": "Market Intelligence & Competitive Benchmarking",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC07",
+    "service": "B2B Voice of Customer (VoC) & Customer Analytics",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://www.insight-eye.org/solutions/consumer-research",
+   "press": "",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Insight Eye Arabia\" OR \"insight-eye\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Insight Eye Arabia\" OR \"insight-eye\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Insight Eye Arabia\" OR \"insight-eye\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Insight Eye Arabia\" OR \"insight-eye\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "platform01consulting.com": {
+  "domain": "platform01consulting.com",
+  "name": "Platform01Consulting",
+  "aliases": [
+   "Platform01Consulting",
+   "platform01consulting"
+  ],
+  "region": "KSA",
+  "regions": [
+   "KSA",
+   "UAE"
+  ],
+  "overlap_type": "",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC08",
+    "service": "Mergers & Acquisitions Strategy & Due Diligence",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://platform01consulting.com/insights",
+   "press": "https://platform01consulting.com/ma-consulting-services",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Platform01Consulting\" OR \"platform01consulting\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Platform01Consulting\" OR \"platform01consulting\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Platform01Consulting\" OR \"platform01consulting\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Platform01Consulting\" OR \"platform01consulting\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "st-insights.com": {
+  "domain": "st-insights.com",
+  "name": "St  Insights",
+  "aliases": [
+   "St  Insights",
+   "st-insights"
+  ],
+  "region": "KSA",
+  "regions": [
+   "KSA"
+  ],
+  "overlap_type": NaN,
+  "threatens": [
+   {
+    "id": "SVC06",
+    "service": "Market Intelligence & Competitive Benchmarking",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://www.st-insights.com/author/stroot/",
+   "press": "",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"St  Insights\" OR \"st-insights\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"St  Insights\" OR \"st-insights\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"St  Insights\" OR \"st-insights\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"St  Insights\" OR \"st-insights\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "saudimarketresearchconsulting.com": {
+  "domain": "saudimarketresearchconsulting.com",
+  "name": "Saudimarketresearchconsulting",
+  "aliases": [
+   "Saudimarketresearchconsulting",
+   "saudimarketresearchconsulting"
+  ],
+  "region": "KSA",
+  "regions": [
+   "KSA"
+  ],
+  "overlap_type": "",
+  "threatens": [
+   {
+    "id": "SVC06",
+    "service": "Market Intelligence & Competitive Benchmarking",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://saudimarketresearchconsulting.com/services/market-research",
+   "press": "https://saudimarketresearchconsulting.com/sectors/construction",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Saudimarketresearchconsulting\" OR \"saudimarketresearchconsulting\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Saudimarketresearchconsulting\" OR \"saudimarketresearchconsulting\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Saudimarketresearchconsulting\" OR \"saudimarketresearchconsulting\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Saudimarketresearchconsulting\" OR \"saudimarketresearchconsulting\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "hkhconsulting.net": {
+  "domain": "hkhconsulting.net",
+  "name": "Follow our thinking #HKHConsulting.",
+  "aliases": [
+   "Follow our thinking #HKHConsulting.",
+   "hkhconsulting"
+  ],
+  "region": "KSA",
+  "regions": [
+   "KSA"
+  ],
+  "overlap_type": "",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC04",
+    "service": "Sales Effectiveness & Commercial Excellence",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC05",
+    "service": "Feasibility Study & Long Range Business Planning",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC08",
+    "service": "Mergers & Acquisitions Strategy & Due Diligence",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC10",
+    "service": "Business Transformation & PMO Advisory",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://hkhconsulting.net/download/hkh-on-strategy-learning-from-the-past-strategic-insights-for-tomorrows-leadership/",
+   "press": "",
+   "rss": "https://hkhconsulting.net/feed/",
+   "sitemap": false
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Follow our thinking #HKHConsulting.\" OR \"hkhconsulting\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Follow our thinking #HKHConsulting.\" OR \"hkhconsulting\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Follow our thinking #HKHConsulting.\" OR \"hkhconsulting\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Follow our thinking #HKHConsulting.\" OR \"hkhconsulting\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "asaconsulting-me.com": {
+  "domain": "asaconsulting-me.com",
+  "name": "ASA Consulting",
+  "aliases": [
+   "ASA Consulting",
+   "asaconsulting-me"
+  ],
+  "region": "KSA",
+  "regions": [
+   "KSA"
+  ],
+  "overlap_type": "direct",
+  "threatens": [
+   {
+    "id": "SVC05",
+    "service": "Feasibility Study & Long Range Business Planning",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC06",
+    "service": "Market Intelligence & Competitive Benchmarking",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://asaconsulting-me.com/blog.cfm?b=2291",
+   "press": "https://asaconsulting-me.com/blog.cfm?b=2291",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"ASA Consulting\" OR \"asaconsulting-me\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"ASA Consulting\" OR \"asaconsulting-me\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"ASA Consulting\" OR \"asaconsulting-me\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"ASA Consulting\" OR \"asaconsulting-me\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "imesconsulting.com": {
+  "domain": "imesconsulting.com",
+  "name": "IMES Consulting",
+  "aliases": [
+   "IMES Consulting",
+   "imesconsulting"
+  ],
+  "region": "KSA",
+  "regions": [
+   "KSA"
+  ],
+  "overlap_type": "direct",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC06",
+    "service": "Market Intelligence & Competitive Benchmarking",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC05",
+    "service": "Feasibility Study & Long Range Business Planning",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "",
+   "press": "",
+   "rss": "",
+   "sitemap": false
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"IMES Consulting\" OR \"imesconsulting\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"IMES Consulting\" OR \"imesconsulting\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"IMES Consulting\" OR \"imesconsulting\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"IMES Consulting\" OR \"imesconsulting\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "performbyai.com": {
+  "domain": "performbyai.com",
+  "name": "Performbyai",
+  "aliases": [
+   "Performbyai",
+   "performbyai"
+  ],
+  "region": "KSA",
+  "regions": [
+   "KSA"
+  ],
+  "overlap_type": "direct",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC04",
+    "service": "Sales Effectiveness & Commercial Excellence",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC05",
+    "service": "Feasibility Study & Long Range Business Planning",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC10",
+    "service": "Business Transformation & PMO Advisory",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "https://www.linkedin.com/company/perform-by-ai",
+   "blog": "https://performbyai.com/services/market-research-business-intelligence",
+   "press": "https://performbyai.com/articles/cost-pressure-gulf-businesses-four-levers",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Performbyai\" OR \"performbyai\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Performbyai\" OR \"performbyai\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Performbyai\" OR \"performbyai\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Performbyai\" OR \"performbyai\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "duckercarlisle.com": {
+  "domain": "duckercarlisle.com",
+  "name": "Duckercarlisle",
+  "aliases": [
+   "Duckercarlisle",
+   "duckercarlisle"
+  ],
+  "region": "KSA",
+  "regions": [
+   "KSA",
+   "US"
+  ],
+  "overlap_type": "direct",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC08",
+    "service": "Mergers & Acquisitions Strategy & Due Diligence",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC05",
+    "service": "Feasibility Study & Long Range Business Planning",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://www.duckercarlisle.com/services/insights-data-benchmarks/",
+   "press": "https://www.duckercarlisle.com/about/news/",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Duckercarlisle\" OR \"duckercarlisle\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Duckercarlisle\" OR \"duckercarlisle\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Duckercarlisle\" OR \"duckercarlisle\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Duckercarlisle\" OR \"duckercarlisle\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "vanguardsconsulting.com": {
+  "domain": "vanguardsconsulting.com",
+  "name": "VΛNGUΛRDS Consulting",
+  "aliases": [
+   "VΛNGUΛRDS Consulting",
+   "vanguardsconsulting"
+  ],
+  "region": "KSA",
+  "regions": [
+   "KSA"
+  ],
+  "overlap_type": NaN,
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC04",
+    "service": "Sales Effectiveness & Commercial Excellence",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://vanguardsconsulting.com/hrdevelopment",
+   "press": "https://vanguardsconsulting.com/news",
+   "rss": "https://www.vanguardsconsulting.com/index?format=rss",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"VΛNGUΛRDS Consulting\" OR \"vanguardsconsulting\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"VΛNGUΛRDS Consulting\" OR \"vanguardsconsulting\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"VΛNGUΛRDS Consulting\" OR \"vanguardsconsulting\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"VΛNGUΛRDS Consulting\" OR \"vanguardsconsulting\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "rayatresearch.com": {
+  "domain": "rayatresearch.com",
+  "name": "Rayat Research",
+  "aliases": [
+   "Rayat Research",
+   "rayatresearch"
+  ],
+  "region": "KSA",
+  "regions": [
+   "KSA"
+  ],
+  "overlap_type": "direct",
+  "threatens": [],
+  "sources": {
+   "linkedin": "",
+   "blog": "",
+   "press": "",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Rayat Research\" OR \"rayatresearch\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Rayat Research\" OR \"rayatresearch\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Rayat Research\" OR \"rayatresearch\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Rayat Research\" OR \"rayatresearch\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "cornerstone.sa": {
+  "domain": "cornerstone.sa",
+  "name": "Cornerstone",
+  "aliases": [
+   "Cornerstone",
+   "cornerstone"
+  ],
+  "region": "KSA",
+  "regions": [
+   "KSA"
+  ],
+  "overlap_type": "direct",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC04",
+    "service": "Sales Effectiveness & Commercial Excellence",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "",
+   "press": "",
+   "rss": "https://cornerstone.sa/feed/",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Cornerstone\" OR \"cornerstone\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Cornerstone\" OR \"cornerstone\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Cornerstone\" OR \"cornerstone\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Cornerstone\" OR \"cornerstone\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "emerton.co": {
+  "domain": "emerton.co",
+  "name": "Emerton",
+  "aliases": [
+   "Emerton",
+   "emerton"
+  ],
+  "region": "KSA",
+  "regions": [
+   "KSA"
+  ],
+  "overlap_type": "direct",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC02",
+    "service": "Market Share Expansion & Growth Acceleration",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC04",
+    "service": "Sales Effectiveness & Commercial Excellence",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC08",
+    "service": "Mergers & Acquisitions Strategy & Due Diligence",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC10",
+    "service": "Business Transformation & PMO Advisory",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "https://www.linkedin.com/company/emerton",
+   "blog": "https://emerton.co/news/article---emerton-data-and-ai-at-the-service-of-environmental-transformation",
+   "press": "https://emerton.co/news",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Emerton\" OR \"emerton\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Emerton\" OR \"emerton\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Emerton\" OR \"emerton\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Emerton\" OR \"emerton\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "asr-consult.com": {
+  "domain": "asr-consult.com",
+  "name": "ASR Financial Consulting",
+  "aliases": [
+   "ASR Financial Consulting",
+   "asr-consult"
+  ],
+  "region": "KSA",
+  "regions": [
+   "KSA"
+  ],
+  "overlap_type": "direct",
+  "threatens": [],
+  "sources": {
+   "linkedin": "",
+   "blog": "",
+   "press": "",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"ASR Financial Consulting\" OR \"asr-consult\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"ASR Financial Consulting\" OR \"asr-consult\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"ASR Financial Consulting\" OR \"asr-consult\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"ASR Financial Consulting\" OR \"asr-consult\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "analytixconsultants.com": {
+  "domain": "analytixconsultants.com",
+  "name": "Analytixconsultants",
+  "aliases": [
+   "Analytixconsultants",
+   "analytixconsultants"
+  ],
+  "region": "KSA",
+  "regions": [
+   "KSA"
+  ],
+  "overlap_type": NaN,
+  "threatens": [
+   {
+    "id": "SVC08",
+    "service": "Mergers & Acquisitions Strategy & Due Diligence",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "",
+   "press": "",
+   "rss": "",
+   "sitemap": false
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Analytixconsultants\" OR \"analytixconsultants\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Analytixconsultants\" OR \"analytixconsultants\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Analytixconsultants\" OR \"analytixconsultants\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Analytixconsultants\" OR \"analytixconsultants\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "clairfield.com": {
+  "domain": "clairfield.com",
+  "name": "Clairfield",
+  "aliases": [
+   "Clairfield",
+   "clairfield"
+  ],
+  "region": "KSA",
+  "regions": [
+   "KSA"
+  ],
+  "overlap_type": "direct",
+  "threatens": [
+   {
+    "id": "SVC08",
+    "service": "Mergers & Acquisitions Strategy & Due Diligence",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://www.clairfield.com/sectors/energy-cleantech-resources/",
+   "press": "https://www.clairfield.com/newsroom/",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Clairfield\" OR \"clairfield\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Clairfield\" OR \"clairfield\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Clairfield\" OR \"clairfield\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Clairfield\" OR \"clairfield\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "sixthfactor.com": {
+  "domain": "sixthfactor.com",
+  "name": "SixthFactor",
+  "aliases": [
+   "SixthFactor",
+   "sixthfactor"
+  ],
+  "region": "UAE",
+  "regions": [
+   "UAE"
+  ],
+  "overlap_type": "",
+  "threatens": [
+   {
+    "id": "SVC06",
+    "service": "Market Intelligence & Competitive Benchmarking",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC07",
+    "service": "B2B Voice of Customer (VoC) & Customer Analytics",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC09",
+    "service": "New Product Development & Innovation Strategy",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://sixthfactor.com/market-research/",
+   "press": "https://sixthfactor.com/sixthdigital-social-media-analysis-for-business/",
+   "rss": "https://sixthfactor.com/feed/",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"SixthFactor\" OR \"sixthfactor\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"SixthFactor\" OR \"sixthfactor\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"SixthFactor\" OR \"sixthfactor\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"SixthFactor\" OR \"sixthfactor\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "pnyxhill.co": {
+  "domain": "pnyxhill.co",
+  "name": "Pnyx Hill",
+  "aliases": [
+   "Pnyx Hill",
+   "pnyxhill"
+  ],
+  "region": "UAE",
+  "regions": [
+   "UAE"
+  ],
+  "overlap_type": "",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC02",
+    "service": "Market Share Expansion & Growth Acceleration",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC04",
+    "service": "Sales Effectiveness & Commercial Excellence",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC05",
+    "service": "Feasibility Study & Long Range Business Planning",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://www.pnyxhill.co/insights",
+   "press": "https://www.pnyxhill.co/insights/categories/pnyx-hill-news",
+   "rss": "https://www.pnyxhill.co/blog-feed.xml",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Pnyx Hill\" OR \"pnyxhill\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Pnyx Hill\" OR \"pnyxhill\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Pnyx Hill\" OR \"pnyxhill\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Pnyx Hill\" OR \"pnyxhill\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "kineticcs.com": {
+  "domain": "kineticcs.com",
+  "name": "Kinetic Consulting Services",
+  "aliases": [
+   "Kinetic Consulting Services",
+   "kineticcs"
+  ],
+  "region": "UAE",
+  "regions": [
+   "UAE"
+  ],
+  "overlap_type": "",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC10",
+    "service": "Business Transformation & PMO Advisory",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://kineticcs.com/business-insights-to-help-your-business-grow/",
+   "press": "",
+   "rss": "https://kineticcs.com/feed/",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Kinetic Consulting Services\" OR \"kineticcs\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Kinetic Consulting Services\" OR \"kineticcs\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Kinetic Consulting Services\" OR \"kineticcs\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Kinetic Consulting Services\" OR \"kineticcs\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "kuveraconsulting.com": {
+  "domain": "kuveraconsulting.com",
+  "name": "Kuvera Consulting",
+  "aliases": [
+   "Kuvera Consulting",
+   "kuveraconsulting"
+  ],
+  "region": "UAE",
+  "regions": [
+   "UAE"
+  ],
+  "overlap_type": "",
+  "threatens": [
+   {
+    "id": "SVC05",
+    "service": "Feasibility Study & Long Range Business Planning",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC08",
+    "service": "Mergers & Acquisitions Strategy & Due Diligence",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "",
+   "press": "",
+   "rss": "",
+   "sitemap": false
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Kuvera Consulting\" OR \"kuveraconsulting\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Kuvera Consulting\" OR \"kuveraconsulting\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Kuvera Consulting\" OR \"kuveraconsulting\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Kuvera Consulting\" OR \"kuveraconsulting\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "infomineo.com": {
+  "domain": "infomineo.com",
+  "name": "Infomineo",
+  "aliases": [
+   "Infomineo",
+   "infomineo"
+  ],
+  "region": "UAE",
+  "regions": [
+   "UAE"
+  ],
+  "overlap_type": "direct",
+  "threatens": [
+   {
+    "id": "SVC06",
+    "service": "Market Intelligence & Competitive Benchmarking",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "https://www.linkedin.com/company/infomineo",
+   "blog": "https://infomineo.com/solutions/",
+   "press": "https://infomineo.com/press-and-media/",
+   "rss": "https://infomineo.com/feed/",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Infomineo\" OR \"infomineo\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Infomineo\" OR \"infomineo\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Infomineo\" OR \"infomineo\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Infomineo\" OR \"infomineo\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "tworldgcc.com": {
+  "domain": "tworldgcc.com",
+  "name": "Tworldgcc",
+  "aliases": [
+   "Tworldgcc",
+   "tworldgcc"
+  ],
+  "region": "UAE",
+  "regions": [
+   "UAE"
+  ],
+  "overlap_type": "",
+  "threatens": [
+   {
+    "id": "SVC08",
+    "service": "Mergers & Acquisitions Strategy & Due Diligence",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://tworldgcc.com/insights-resources",
+   "press": "",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Tworldgcc\" OR \"tworldgcc\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Tworldgcc\" OR \"tworldgcc\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Tworldgcc\" OR \"tworldgcc\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Tworldgcc\" OR \"tworldgcc\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "rise2research.com": {
+  "domain": "rise2research.com",
+  "name": "Rise2 Research",
+  "aliases": [
+   "Rise2 Research",
+   "rise2research",
+   "Rise2Research"
+  ],
+  "region": "UAE",
+  "regions": [
+   "UAE"
+  ],
+  "overlap_type": "direct",
+  "threatens": [
+   {
+    "id": "SVC06",
+    "service": "Market Intelligence & Competitive Benchmarking",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://rise2research.com/market-research.php",
+   "press": "",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Rise2 Research\" OR \"rise2research\" OR \"Rise2Research\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Rise2 Research\" OR \"rise2research\" OR \"Rise2Research\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Rise2 Research\" OR \"rise2research\" OR \"Rise2Research\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Rise2 Research\" OR \"rise2research\" OR \"Rise2Research\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "cloverone.com": {
+  "domain": "cloverone.com",
+  "name": "M&A Advisory Dubai",
+  "aliases": [
+   "M&A Advisory Dubai",
+   "cloverone",
+   "CloverOne"
+  ],
+  "region": "UAE",
+  "regions": [
+   "UAE"
+  ],
+  "overlap_type": "direct",
+  "threatens": [
+   {
+    "id": "SVC08",
+    "service": "Mergers & Acquisitions Strategy & Due Diligence",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://cloverone.com/insights",
+   "press": "",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"M&A Advisory Dubai\" OR \"cloverone\" OR \"CloverOne\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"M&A Advisory Dubai\" OR \"cloverone\" OR \"CloverOne\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"M&A Advisory Dubai\" OR \"cloverone\" OR \"CloverOne\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"M&A Advisory Dubai\" OR \"cloverone\" OR \"CloverOne\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "idealmc.com": {
+  "domain": "idealmc.com",
+  "name": "Ideal Capital",
+  "aliases": [
+   "Ideal Capital",
+   "idealmc"
+  ],
+  "region": "UAE",
+  "regions": [
+   "UAE"
+  ],
+  "overlap_type": "direct",
+  "threatens": [
+   {
+    "id": "SVC05",
+    "service": "Feasibility Study & Long Range Business Planning",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC06",
+    "service": "Market Intelligence & Competitive Benchmarking",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC10",
+    "service": "Business Transformation & PMO Advisory",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://www.idealmc.com/research",
+   "press": "",
+   "rss": "https://www.idealmc.com/blog-feed.xml",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Ideal Capital\" OR \"idealmc\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Ideal Capital\" OR \"idealmc\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Ideal Capital\" OR \"idealmc\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Ideal Capital\" OR \"idealmc\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "lever-bridge.com": {
+  "domain": "lever-bridge.com",
+  "name": "FMCG Consulting GCC",
+  "aliases": [
+   "FMCG Consulting GCC",
+   "lever-bridge",
+   "Lever Bridge"
+  ],
+  "region": "UAE",
+  "regions": [
+   "UAE"
+  ],
+  "overlap_type": "adjacent",
+  "threatens": [
+   {
+    "id": "SVC02",
+    "service": "Market Share Expansion & Growth Acceleration",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC04",
+    "service": "Sales Effectiveness & Commercial Excellence",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC09",
+    "service": "New Product Development & Innovation Strategy",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://lever-bridge.com/lb-resources/",
+   "press": "",
+   "rss": "https://lever-bridge.com/feed/",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"FMCG Consulting GCC\" OR \"lever-bridge\" OR \"Lever Bridge\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"FMCG Consulting GCC\" OR \"lever-bridge\" OR \"Lever Bridge\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"FMCG Consulting GCC\" OR \"lever-bridge\" OR \"Lever Bridge\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"FMCG Consulting GCC\" OR \"lever-bridge\" OR \"Lever Bridge\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "sensestrategy.com": {
+  "domain": "sensestrategy.com",
+  "name": "Sense Strategy",
+  "aliases": [
+   "Sense Strategy",
+   "sensestrategy"
+  ],
+  "region": "UAE",
+  "regions": [
+   "UAE"
+  ],
+  "overlap_type": "direct",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC04",
+    "service": "Sales Effectiveness & Commercial Excellence",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC08",
+    "service": "Mergers & Acquisitions Strategy & Due Diligence",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC10",
+    "service": "Business Transformation & PMO Advisory",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://sensestrategy.com/new-page-21",
+   "press": "https://sensestrategy.com/news",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Sense Strategy\" OR \"sensestrategy\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Sense Strategy\" OR \"sensestrategy\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Sense Strategy\" OR \"sensestrategy\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Sense Strategy\" OR \"sensestrategy\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "andarakis.com": {
+  "domain": "andarakis.com",
+  "name": "Andarakis",
+  "aliases": [
+   "Andarakis",
+   "andarakis"
+  ],
+  "region": "UAE",
+  "regions": [
+   "UAE"
+  ],
+  "overlap_type": "direct",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC03",
+    "service": "Adjacency & Business Diversification Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC04",
+    "service": "Sales Effectiveness & Commercial Excellence",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "",
+   "press": "",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Andarakis\" OR \"andarakis\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Andarakis\" OR \"andarakis\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Andarakis\" OR \"andarakis\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Andarakis\" OR \"andarakis\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "marketresearchabudhabi.com": {
+  "domain": "marketresearchabudhabi.com",
+  "name": "Marketresearchabudhabi",
+  "aliases": [
+   "Marketresearchabudhabi",
+   "marketresearchabudhabi"
+  ],
+  "region": "UAE",
+  "regions": [
+   "UAE"
+  ],
+  "overlap_type": NaN,
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC05",
+    "service": "Feasibility Study & Long Range Business Planning",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC06",
+    "service": "Market Intelligence & Competitive Benchmarking",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://marketresearchabudhabi.com/services/market-research",
+   "press": "",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Marketresearchabudhabi\" OR \"marketresearchabudhabi\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Marketresearchabudhabi\" OR \"marketresearchabudhabi\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Marketresearchabudhabi\" OR \"marketresearchabudhabi\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Marketresearchabudhabi\" OR \"marketresearchabudhabi\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "pointconsultancy.com": {
+  "domain": "pointconsultancy.com",
+  "name": "Point Consultancy",
+  "aliases": [
+   "Point Consultancy",
+   "pointconsultancy"
+  ],
+  "region": "UAE",
+  "regions": [
+   "UAE"
+  ],
+  "overlap_type": "adjacent",
+  "threatens": [
+   {
+    "id": "SVC06",
+    "service": "Market Intelligence & Competitive Benchmarking",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC07",
+    "service": "B2B Voice of Customer (VoC) & Customer Analytics",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC05",
+    "service": "Feasibility Study & Long Range Business Planning",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "https://www.linkedin.com/company/point-research-&-marketing-consultancy",
+   "blog": "https://pointconsultancy.com/our-research-solutions/",
+   "press": "https://pointconsultancy.com/category/blog/",
+   "rss": "https://pointconsultancy.com/feed/",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Point Consultancy\" OR \"pointconsultancy\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Point Consultancy\" OR \"pointconsultancy\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Point Consultancy\" OR \"pointconsultancy\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Point Consultancy\" OR \"pointconsultancy\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "macwise.co": {
+  "domain": "macwise.co",
+  "name": "Macwise",
+  "aliases": [
+   "Macwise",
+   "macwise"
+  ],
+  "region": "UAE",
+  "regions": [
+   "UAE"
+  ],
+  "overlap_type": "direct",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC02",
+    "service": "Market Share Expansion & Growth Acceleration",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC04",
+    "service": "Sales Effectiveness & Commercial Excellence",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC05",
+    "service": "Feasibility Study & Long Range Business Planning",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://macwise.co/investment-research-gtm/",
+   "press": "",
+   "rss": "https://macwise.co/feed/",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Macwise\" OR \"macwise\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Macwise\" OR \"macwise\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Macwise\" OR \"macwise\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Macwise\" OR \"macwise\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "glasgowinsights.com": {
+  "domain": "glasgowinsights.com",
+  "name": "Glasgow Research & Consulting",
+  "aliases": [
+   "Glasgow Research & Consulting",
+   "glasgowinsights"
+  ],
+  "region": "UAE",
+  "regions": [
+   "UAE"
+  ],
+  "overlap_type": "adjacent",
+  "threatens": [
+   {
+    "id": "SVC06",
+    "service": "Market Intelligence & Competitive Benchmarking",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC07",
+    "service": "B2B Voice of Customer (VoC) & Customer Analytics",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC05",
+    "service": "Feasibility Study & Long Range Business Planning",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://www.glasgowinsights.com/business-research/",
+   "press": "https://www.glasgowinsights.com/news-events/",
+   "rss": "https://www.glasgowinsights.com/feed/",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Glasgow Research & Consulting\" OR \"glasgowinsights\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Glasgow Research & Consulting\" OR \"glasgowinsights\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Glasgow Research & Consulting\" OR \"glasgowinsights\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Glasgow Research & Consulting\" OR \"glasgowinsights\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "researchers.me": {
+  "domain": "researchers.me",
+  "name": "Researchers",
+  "aliases": [
+   "Researchers",
+   "researchers"
+  ],
+  "region": "UAE",
+  "regions": [
+   "UAE"
+  ],
+  "overlap_type": NaN,
+  "threatens": [
+   {
+    "id": "SVC05",
+    "service": "Feasibility Study & Long Range Business Planning",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC06",
+    "service": "Market Intelligence & Competitive Benchmarking",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://researchers.me/blog",
+   "press": "",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Researchers\" OR \"researchers\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Researchers\" OR \"researchers\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Researchers\" OR \"researchers\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Researchers\" OR \"researchers\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "cxg.com": {
+  "domain": "cxg.com",
+  "name": "Cxg",
+  "aliases": [
+   "Cxg",
+   "cxg",
+   "CXG"
+  ],
+  "region": "UAE",
+  "regions": [
+   "UAE"
+  ],
+  "overlap_type": "adjacent",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC02",
+    "service": "Market Share Expansion & Growth Acceleration",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC04",
+    "service": "Sales Effectiveness & Commercial Excellence",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC05",
+    "service": "Feasibility Study & Long Range Business Planning",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "https://www.linkedin.com/company/cxgroup",
+   "blog": "https://cxg.com#",
+   "press": "https://www.cxg.com/insight/cxg-named-as-research-partner-for-shoptalk-luxe-2027/",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Cxg\" OR \"cxg\" OR \"CXG\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Cxg\" OR \"cxg\" OR \"CXG\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Cxg\" OR \"cxg\" OR \"CXG\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Cxg\" OR \"cxg\" OR \"CXG\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "ids-research.com": {
+  "domain": "ids-research.com",
+  "name": "Ids  Research",
+  "aliases": [
+   "Ids  Research",
+   "ids-research"
+  ],
+  "region": "UAE",
+  "regions": [
+   "UAE",
+   "KSA"
+  ],
+  "overlap_type": NaN,
+  "threatens": [
+   {
+    "id": "SVC05",
+    "service": "Feasibility Study & Long Range Business Planning",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC06",
+    "service": "Market Intelligence & Competitive Benchmarking",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://www.ids-research.com/service/quantitative-research-services/",
+   "press": "",
+   "rss": "https://www.ids-research.com/feed/",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Ids  Research\" OR \"ids-research\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Ids  Research\" OR \"ids-research\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Ids  Research\" OR \"ids-research\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Ids  Research\" OR \"ids-research\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "abudhabimarketresearch.com": {
+  "domain": "abudhabimarketresearch.com",
+  "name": "Abudhabimarket Research",
+  "aliases": [
+   "Abudhabimarket Research",
+   "abudhabimarketresearch"
+  ],
+  "region": "UAE",
+  "regions": [
+   "UAE"
+  ],
+  "overlap_type": NaN,
+  "threatens": [
+   {
+    "id": "SVC06",
+    "service": "Market Intelligence & Competitive Benchmarking",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC07",
+    "service": "B2B Voice of Customer (VoC) & Customer Analytics",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "",
+   "press": "",
+   "rss": "",
+   "sitemap": false
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Abudhabimarket Research\" OR \"abudhabimarketresearch\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Abudhabimarket Research\" OR \"abudhabimarketresearch\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Abudhabimarket Research\" OR \"abudhabimarketresearch\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Abudhabimarket Research\" OR \"abudhabimarketresearch\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "flexlabs.me": {
+  "domain": "flexlabs.me",
+  "name": "Flex Labs",
+  "aliases": [
+   "Flex Labs",
+   "flexlabs"
+  ],
+  "region": "UAE",
+  "regions": [
+   "UAE"
+  ],
+  "overlap_type": "direct",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC02",
+    "service": "Market Share Expansion & Growth Acceleration",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC04",
+    "service": "Sales Effectiveness & Commercial Excellence",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC05",
+    "service": "Feasibility Study & Long Range Business Planning",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://flexlabs.me/knowledge",
+   "press": "",
+   "rss": "",
+   "sitemap": false
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Flex Labs\" OR \"flexlabs\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Flex Labs\" OR \"flexlabs\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Flex Labs\" OR \"flexlabs\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Flex Labs\" OR \"flexlabs\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "solomonpeoplesolutions.com": {
+  "domain": "solomonpeoplesolutions.com",
+  "name": "Workforce Transformation in Dubai",
+  "aliases": [
+   "Workforce Transformation in Dubai",
+   "solomonpeoplesolutions",
+   "NXSYS"
+  ],
+  "region": "UAE",
+  "regions": [
+   "UAE"
+  ],
+  "overlap_type": "direct",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC02",
+    "service": "Market Share Expansion & Growth Acceleration",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC04",
+    "service": "Sales Effectiveness & Commercial Excellence",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC05",
+    "service": "Feasibility Study & Long Range Business Planning",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "https://www.linkedin.com/company/solomon-management-consultants",
+   "blog": "https://solomonpeoplesolutions.com/certification-programmes/certified-human-resources-manager-chrm-certification-course",
+   "press": "",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Workforce Transformation in Dubai\" OR \"solomonpeoplesolutions\" OR \"NXSYS\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Workforce Transformation in Dubai\" OR \"solomonpeoplesolutions\" OR \"NXSYS\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Workforce Transformation in Dubai\" OR \"solomonpeoplesolutions\" OR \"NXSYS\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Workforce Transformation in Dubai\" OR \"solomonpeoplesolutions\" OR \"NXSYS\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "marcresearch.com": {
+  "domain": "marcresearch.com",
+  "name": "Strategic Market Insights",
+  "aliases": [
+   "Strategic Market Insights",
+   "marcresearch"
+  ],
+  "region": "US",
+  "regions": [
+   "US"
+  ],
+  "overlap_type": "direct",
+  "threatens": [
+   {
+    "id": "SVC06",
+    "service": "Market Intelligence & Competitive Benchmarking",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC07",
+    "service": "B2B Voice of Customer (VoC) & Customer Analytics",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://marcresearch.com#",
+   "press": "https://marcresearch.com/media-communications/",
+   "rss": "https://marcresearch.com/feed/",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Strategic Market Insights\" OR \"marcresearch\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Strategic Market Insights\" OR \"marcresearch\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Strategic Market Insights\" OR \"marcresearch\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Strategic Market Insights\" OR \"marcresearch\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "integrationconsulting.com": {
+  "domain": "integrationconsulting.com",
+  "name": "Integration Consulting",
+  "aliases": [
+   "Integration Consulting",
+   "integrationconsulting"
+  ],
+  "region": "US",
+  "regions": [
+   "US"
+  ],
+  "overlap_type": "",
+  "threatens": [
+   {
+    "id": "SVC10",
+    "service": "Business Transformation & PMO Advisory",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "",
+   "press": "",
+   "rss": "",
+   "sitemap": false
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Integration Consulting\" OR \"integrationconsulting\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Integration Consulting\" OR \"integrationconsulting\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Integration Consulting\" OR \"integrationconsulting\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Integration Consulting\" OR \"integrationconsulting\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "grandviewresearch.com": {
+  "domain": "grandviewresearch.com",
+  "name": "Grand View Research, Inc.",
+  "aliases": [
+   "Grand View Research, Inc.",
+   "grandviewresearch"
+  ],
+  "region": "US",
+  "regions": [
+   "US"
+  ],
+  "overlap_type": NaN,
+  "threatens": [
+   {
+    "id": "SVC06",
+    "service": "Market Intelligence & Competitive Benchmarking",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://grandviewresearch.com/industry/nanoparticles",
+   "press": "https://grandviewresearch.com/industry/digital-media",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Grand View Research, Inc.\" OR \"grandviewresearch\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Grand View Research, Inc.\" OR \"grandviewresearch\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Grand View Research, Inc.\" OR \"grandviewresearch\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Grand View Research, Inc.\" OR \"grandviewresearch\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "hypothesisgroup.com": {
+  "domain": "hypothesisgroup.com",
+  "name": "Global Consumer Insights Agency",
+  "aliases": [
+   "Global Consumer Insights Agency",
+   "hypothesisgroup"
+  ],
+  "region": "US",
+  "regions": [
+   "US"
+  ],
+  "overlap_type": "direct",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC06",
+    "service": "Market Intelligence & Competitive Benchmarking",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC07",
+    "service": "B2B Voice of Customer (VoC) & Customer Analytics",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://hypothesisgroup.com/qualitative-research",
+   "press": "https://hypothesisgroup.com/case-studies/teen-social-media-research",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Global Consumer Insights Agency\" OR \"hypothesisgroup\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Global Consumer Insights Agency\" OR \"hypothesisgroup\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Global Consumer Insights Agency\" OR \"hypothesisgroup\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Global Consumer Insights Agency\" OR \"hypothesisgroup\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "materialplus.io": {
+  "domain": "materialplus.io",
+  "name": "Materialplus",
+  "aliases": [
+   "Materialplus",
+   "materialplus"
+  ],
+  "region": "US",
+  "regions": [
+   "US"
+  ],
+  "overlap_type": "direct",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC06",
+    "service": "Market Intelligence & Competitive Benchmarking",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC07",
+    "service": "B2B Voice of Customer (VoC) & Customer Analytics",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://materialplus.io/services/consumer-insights",
+   "press": "",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Materialplus\" OR \"materialplus\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Materialplus\" OR \"materialplus\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Materialplus\" OR \"materialplus\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Materialplus\" OR \"materialplus\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "frontierview.com": {
+  "domain": "frontierview.com",
+  "name": "FrontierView",
+  "aliases": [
+   "FrontierView",
+   "frontierview"
+  ],
+  "region": "US",
+  "regions": [
+   "US"
+  ],
+  "overlap_type": "",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC06",
+    "service": "Market Intelligence & Competitive Benchmarking",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://frontierview.com/products/consumerview/",
+   "press": "",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"FrontierView\" OR \"frontierview\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"FrontierView\" OR \"frontierview\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"FrontierView\" OR \"frontierview\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"FrontierView\" OR \"frontierview\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "rocketmarketdevelopment.com": {
+  "domain": "rocketmarketdevelopment.com",
+  "name": "Strategic Consulting",
+  "aliases": [
+   "Strategic Consulting",
+   "rocketmarketdevelopment"
+  ],
+  "region": "US",
+  "regions": [
+   "US"
+  ],
+  "overlap_type": "direct",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC06",
+    "service": "Market Intelligence & Competitive Benchmarking",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC07",
+    "service": "B2B Voice of Customer (VoC) & Customer Analytics",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://rocketmarketdevelopment.com/articles-and-podcasts",
+   "press": "https://rocketmarketdevelopment.com/news",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Strategic Consulting\" OR \"rocketmarketdevelopment\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Strategic Consulting\" OR \"rocketmarketdevelopment\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Strategic Consulting\" OR \"rocketmarketdevelopment\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Strategic Consulting\" OR \"rocketmarketdevelopment\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "escalent.co": {
+  "domain": "escalent.co",
+  "name": "Escalent",
+  "aliases": [
+   "Escalent",
+   "escalent"
+  ],
+  "region": "US",
+  "regions": [
+   "US"
+  ],
+  "overlap_type": "direct",
+  "threatens": [
+   {
+    "id": "SVC06",
+    "service": "Market Intelligence & Competitive Benchmarking",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC07",
+    "service": "B2B Voice of Customer (VoC) & Customer Analytics",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://escalent.co/solutions/mergers-acquisitions-research/",
+   "press": "https://escalent.co/contact/newsletter-sign-up/",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Escalent\" OR \"escalent\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Escalent\" OR \"escalent\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Escalent\" OR \"escalent\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Escalent\" OR \"escalent\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "ecgconsulting.com": {
+  "domain": "ecgconsulting.com",
+  "name": "ECG Consulting",
+  "aliases": [
+   "ECG Consulting",
+   "ecgconsulting"
+  ],
+  "region": "US",
+  "regions": [
+   "US"
+  ],
+  "overlap_type": "",
+  "threatens": [
+   {
+    "id": "SVC05",
+    "service": "Feasibility Study & Long Range Business Planning",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC08",
+    "service": "Mergers & Acquisitions Strategy & Due Diligence",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://ecgconsulting.com/insights",
+   "press": "https://ecgconsulting.com/ecg-named-one-americas-best-management-consulting-firms/",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"ECG Consulting\" OR \"ecgconsulting\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"ECG Consulting\" OR \"ecgconsulting\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"ECG Consulting\" OR \"ecgconsulting\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"ECG Consulting\" OR \"ecgconsulting\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "thekeystonegroup.com": {
+  "domain": "thekeystonegroup.com",
+  "name": "The Keystone Group",
+  "aliases": [
+   "The Keystone Group",
+   "thekeystonegroup"
+  ],
+  "region": "US",
+  "regions": [
+   "US"
+  ],
+  "overlap_type": "",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://www.thekeystonegroup.com/newsfeed",
+   "press": "https://www.thekeystonegroup.com/newsfeed",
+   "rss": "https://www.thekeystonegroup.com/blog-feed.xml",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"The Keystone Group\" OR \"thekeystonegroup\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"The Keystone Group\" OR \"thekeystonegroup\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"The Keystone Group\" OR \"thekeystonegroup\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"The Keystone Group\" OR \"thekeystonegroup\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "antedote.com": {
+  "domain": "antedote.com",
+  "name": "Antedote",
+  "aliases": [
+   "Antedote",
+   "antedote",
+   "antedote.com"
+  ],
+  "region": "US",
+  "regions": [
+   "US"
+  ],
+  "overlap_type": "direct",
+  "threatens": [
+   {
+    "id": "SVC06",
+    "service": "Market Intelligence & Competitive Benchmarking",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://antedote.com/what-we-do/strategic-research/",
+   "press": "",
+   "rss": "https://antedote.com/rss.xml",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Antedote\" OR \"antedote\" OR \"antedote.com\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Antedote\" OR \"antedote\" OR \"antedote.com\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Antedote\" OR \"antedote\" OR \"antedote.com\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Antedote\" OR \"antedote\" OR \"antedote.com\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "sphericalinsights.com": {
+  "domain": "sphericalinsights.com",
+  "name": "Spherical Insights",
+  "aliases": [
+   "Spherical Insights",
+   "sphericalinsights"
+  ],
+  "region": "US",
+  "regions": [
+   "US"
+  ],
+  "overlap_type": NaN,
+  "threatens": [
+   {
+    "id": "SVC06",
+    "service": "Market Intelligence & Competitive Benchmarking",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://www.sphericalinsights.com/blogs",
+   "press": "https://www.sphericalinsights.com/press",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Spherical Insights\" OR \"sphericalinsights\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Spherical Insights\" OR \"sphericalinsights\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Spherical Insights\" OR \"sphericalinsights\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Spherical Insights\" OR \"sphericalinsights\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "groundfloorpartners.com": {
+  "domain": "groundfloorpartners.com",
+  "name": "Ground Floor Partners",
+  "aliases": [
+   "Ground Floor Partners",
+   "groundfloorpartners"
+  ],
+  "region": "US",
+  "regions": [
+   "US"
+  ],
+  "overlap_type": "",
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC05",
+    "service": "Feasibility Study & Long Range Business Planning",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "",
+   "press": "",
+   "rss": "",
+   "sitemap": false
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Ground Floor Partners\" OR \"groundfloorpartners\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Ground Floor Partners\" OR \"groundfloorpartners\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Ground Floor Partners\" OR \"groundfloorpartners\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Ground Floor Partners\" OR \"groundfloorpartners\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "stax.com": {
+  "domain": "stax.com",
+  "name": "Stax",
+  "aliases": [
+   "Stax",
+   "stax"
+  ],
+  "region": "US",
+  "regions": [
+   "US"
+  ],
+  "overlap_type": "direct",
+  "threatens": [],
+  "sources": {
+   "linkedin": "https://www.linkedin.com/company/stax-a-global-consulting-firm",
+   "blog": "https://stax.com/insights",
+   "press": "https://stax.com/about#StaxNews",
+   "rss": "https://www.stax.com/feed/rss2",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Stax\" OR \"stax\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Stax\" OR \"stax\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Stax\" OR \"stax\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Stax\" OR \"stax\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "cil.com": {
+  "domain": "cil.com",
+  "name": "CIL",
+  "aliases": [
+   "CIL",
+   "cil"
+  ],
+  "region": "US",
+  "regions": [
+   "US"
+  ],
+  "overlap_type": "direct",
+  "threatens": [],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://cil.com/insights",
+   "press": "https://cil.com/sectors/media",
+   "rss": "",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"CIL\" OR \"cil\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"CIL\" OR \"cil\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"CIL\" OR \"cil\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"CIL\" OR \"cil\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "ibdcllc.com": {
+  "domain": "ibdcllc.com",
+  "name": "Ibdcllc",
+  "aliases": [
+   "Ibdcllc",
+   "ibdcllc"
+  ],
+  "region": "US",
+  "regions": [
+   "US"
+  ],
+  "overlap_type": NaN,
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC02",
+    "service": "Market Share Expansion & Growth Acceleration",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC04",
+    "service": "Sales Effectiveness & Commercial Excellence",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://www.ibdcllc.com/insights-media/",
+   "press": "https://www.ibdcllc.com/insights-media/",
+   "rss": "https://www.ibdcllc.com/feed/",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Ibdcllc\" OR \"ibdcllc\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Ibdcllc\" OR \"ibdcllc\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Ibdcllc\" OR \"ibdcllc\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Ibdcllc\" OR \"ibdcllc\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "burke.com": {
+  "domain": "burke.com",
+  "name": "Burke, Inc.",
+  "aliases": [
+   "Burke, Inc.",
+   "burke"
+  ],
+  "region": "US",
+  "regions": [
+   "US"
+  ],
+  "overlap_type": "direct",
+  "threatens": [],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://www.burke.com/perspective/",
+   "press": "https://www.burke.com/about/latest-news/",
+   "rss": "https://www.burke.com/feed/",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Burke, Inc.\" OR \"burke\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Burke, Inc.\" OR \"burke\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Burke, Inc.\" OR \"burke\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Burke, Inc.\" OR \"burke\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "globaledgemarkets.com": {
+  "domain": "globaledgemarkets.com",
+  "name": "Globaledgemarkets",
+  "aliases": [
+   "Globaledgemarkets",
+   "globaledgemarkets"
+  ],
+  "region": "US",
+  "regions": [
+   "US"
+  ],
+  "overlap_type": NaN,
+  "threatens": [
+   {
+    "id": "SVC01",
+    "service": "International Market Entry & Expansion Strategy",
+    "practice_leader": ""
+   },
+   {
+    "id": "SVC04",
+    "service": "Sales Effectiveness & Commercial Excellence",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://globaledgemarkets.com/category/blog-post/",
+   "press": "https://globaledgemarkets.com/technology-and-media/",
+   "rss": "https://globaledgemarkets.com/feed/",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Globaledgemarkets\" OR \"globaledgemarkets\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Globaledgemarkets\" OR \"globaledgemarkets\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Globaledgemarkets\" OR \"globaledgemarkets\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Globaledgemarkets\" OR \"globaledgemarkets\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "quantumstrat.com": {
+  "domain": "quantumstrat.com",
+  "name": "Quantum Strategic Advisors",
+  "aliases": [
+   "Quantum Strategic Advisors",
+   "quantumstrat",
+   "quantumstrat.com"
+  ],
+  "region": "US",
+  "regions": [
+   "US"
+  ],
+  "overlap_type": "direct",
+  "threatens": [
+   {
+    "id": "SVC08",
+    "service": "Mergers & Acquisitions Strategy & Due Diligence",
+    "practice_leader": ""
+   }
+  ],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://quantumstrat.com/category/news-insights/",
+   "press": "https://quantumstrat.com/category/news-insights/",
+   "rss": "https://quantumstrat.com/feed/",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Quantum Strategic Advisors\" OR \"quantumstrat\" OR \"quantumstrat.com\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Quantum Strategic Advisors\" OR \"quantumstrat\" OR \"quantumstrat.com\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Quantum Strategic Advisors\" OR \"quantumstrat\" OR \"quantumstrat.com\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Quantum Strategic Advisors\" OR \"quantumstrat\" OR \"quantumstrat.com\") (report OR insights OR whitepaper OR webinar)"
+  }
+ },
+ "imadresearch.com": {
+  "domain": "imadresearch.com",
+  "name": "Imad Research",
+  "aliases": [
+   "Imad Research",
+   "imadresearch"
+  ],
+  "region": "US",
+  "regions": [
+   "US"
+  ],
+  "overlap_type": "direct",
+  "threatens": [],
+  "sources": {
+   "linkedin": "",
+   "blog": "https://imadresearch.com/resource-center/",
+   "press": "https://imadresearch.com/media-coverages/",
+   "rss": "https://imadresearch.com/feed/",
+   "sitemap": true
+  },
+  "watch_topics": [
+   "business_updates",
+   "deals_engagements",
+   "m_and_a",
+   "digital_presence"
+  ],
+  "news_queries": {
+   "deals": "(\"Imad Research\" OR \"imadresearch\") (client OR \"wins\" OR partnership OR engagement OR mandate)",
+   "m_and_a": "(\"Imad Research\" OR \"imadresearch\") (acquires OR acquisition OR merger OR investment OR funding)",
+   "business": "(\"Imad Research\" OR \"imadresearch\") (expands OR launches OR \"new office\" OR growth OR appoints)",
+   "digital": "(\"Imad Research\" OR \"imadresearch\") (report OR insights OR whitepaper OR webinar)"
+  }
+ }
+}
