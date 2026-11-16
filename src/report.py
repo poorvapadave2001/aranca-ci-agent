@@ -43,6 +43,11 @@ def load_json(p):
     except Exception:
         return {}
 
+try:
+    import rag
+except Exception:
+    rag = None
+
 profile = load_json(PROFILE_F)
 SL = profile.get("service_lines", [])
 SVC_NAME = {s["id"]: s["name"] for s in SL}
@@ -112,9 +117,10 @@ Return JSON {"r":[{"i":0,"cat":"","rel":0,"sum":"max 25 words, factual, English"
 @@ITEMS@@"""
 
 def item_block(i, r):
+    extra = f' Aranca-related: {r["aranca"]}' if r.get("aranca") else ""
     return (f'<item i={i} firm="{txt(r["company"], 50).replace(chr(34), chr(39))}" region="{r["region"]}" '
             f'src="{r["source_type"]}" date="{(r["published"] or "")[:10]}" hint="{r["category_hint"]}">'
-            f'Title: {txt(r["title"], 160)} Text: {txt(r["snippet"], SNIP)}</item>')
+            f'Title: {txt(r["title"], 160)} Text: {txt(r["snippet"], SNIP)}{extra}</item>')
 
 def analyze():
     cutoff = (datetime.now(timezone.utc) - timedelta(days=DAYS)).isoformat()
@@ -142,6 +148,11 @@ def analyze():
         return
     for s_ in range(0, len(todo), BATCH):
         chunk = todo[s_:s_ + BATCH]
+        if rag:
+            ms = rag.match_many([f"{r['title']}. {r['snippet'] or ''}" for r in chunk])
+            for r, m in zip(chunk, ms):
+                r["aranca"] = rag.brief(m)
+                r["svc_rag"] = rag.top_services(m)
         out = llm_call(ANALYZE_PROMPT.replace("@@LINES@@", LINES_SHORT)
                        .replace("@@ITEMS@@", "\n".join(item_block(i, r) for i, r in enumerate(chunk))))
         res = {}
@@ -160,6 +171,8 @@ def analyze():
             cat = x.get("cat") if x.get("cat") in CATS else (r["category_hint"] if r["category_hint"] in CATS else "Digital Presence")
             rel = 0 if cat == "Noise" else num(x.get("rel"), 0, 5)
             svc = [i_ for i_ in (x.get("svc") if isinstance(x.get("svc"), list) else []) if i_ in SVC_NAME][:4]
+            if not svc and r.get("svc_rag"):
+                svc = [s for s in r["svc_rag"] if s in SVC_NAME]
             urg = x.get("urg") if x.get("urg") in ("low", "med", "high") else "low"
             con.execute("INSERT OR REPLACE INTO ci_insights(id, rel, cat, summary, why, svc, urg, analyzed_at, state, tries) "
                         "VALUES(?,?,?,?,?,?,?,?, 'done', ?)",
