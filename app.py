@@ -258,9 +258,16 @@ with tab4:
 # ------------------------- tab 5: ask the agent -------------------------
 with tab5:
     st.header("Ask the Agent")
-    st.caption("Answers come only from the stored, sourced items. Retrieval is keyword-based "
-               "(an embedding upgrade is on the roadmap).")
-    question = st.text_input("Example: What have Japan competitors announced recently?")
+    st.caption("Semantic retrieval over sourced items, grounded in Aranca's service catalogue.")
+    question = st.text_input("Example: Who is expanding in the Gulf this month?")
+    if st.button("Ask") and question:
+        import rag
+        res = rag.answer(question)
+        st.markdown(res["answer"])
+        with st.expander("Sources", expanded=True):
+            for i, s in enumerate(res["sources"], 1):
+                st.markdown(f"[{i}] **{s['company']}** ({s['region']}, {s['date']}): {s['summary']} "
+                            f"[link]({s['url']})" + (f"  \n*Aranca offering affected: {s['aranca']}*" if s["aranca"] else ""))
 
     def retrieve(question, k=8):
         ql = question.lower()
