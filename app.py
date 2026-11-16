@@ -260,16 +260,9 @@ with tab5:
     st.header("Ask the Agent")
     st.caption("Semantic retrieval over sourced items, grounded in Aranca's service catalogue.")
     question = st.text_input("Example: Who is expanding in the Gulf this month?")
-    if st.button("Ask") and question:
-        import rag
-        res = rag.answer(question)
-        st.markdown(res["answer"])
-        with st.expander("Sources", expanded=True):
-            for i, s in enumerate(res["sources"], 1):
-                st.markdown(f"[{i}] **{s['company']}** ({s['region']}, {s['date']}): {s['summary']} "
-                            f"[link]({s['url']})" + (f"  \n*Aranca offering affected: {s['aranca']}*" if s["aranca"] else ""))
 
     def retrieve(question, k=8):
+        """Keyword fallback: works without embeddings (no model download, no extra dependencies)."""
         ql = question.lower()
         tokens = {w for w in ql.replace("?", " ").replace(",", " ").split() if len(w) > 2}
         for key, vs in SYN.items():
@@ -281,16 +274,30 @@ with tab5:
         out = ins.assign(_s=score + ins.priority / 100)
         return out[score > 0].sort_values("_s", ascending=False).head(k)
 
-    if st.button("Ask") and question:
-        hits = retrieve(question)
-        if hits.empty:
-            st.warning("No matching items found.")
-        else:
-            ctx = "\n".join(f"[{i + 1}] {r.company} ({r.region}, {r.published:%Y-%m-%d}, {r.category}): "
-                            f"{r.summary} | Why it matters: {r.why}" for i, (_, r) in enumerate(hits.iterrows()))
-            try:
-                from llm import ask
-                out = ask("fast", f"""Answer the question using ONLY the numbered items below.
+    # one button (a second identical st.button raised StreamlitDuplicateElementId)
+    if st.button("Ask", key="ask_agent") and question:
+        res = None
+        try:                                    # 1) semantic retrieval: local embeddings, no API tokens
+            import rag
+            res = rag.answer(question)
+        except BaseException as e:              # embeddings unavailable (model download, memory), offline, limits
+            st.caption(f"Semantic search unavailable ({str(e)[:60]}); using keyword retrieval.")
+        if res and res.get("sources"):
+            st.markdown(res["answer"])
+            with st.expander("Sources", expanded=True):
+                for i, s in enumerate(res["sources"], 1):
+                    st.markdown(f"[{i}] **{s['company']}** ({s['region']}, {s['date']}): {s['summary']} "
+                                f"[link]({s['url']})" + (f"  \n*Aranca offering affected: {s['aranca']}*" if s["aranca"] else ""))
+        else:                                   # 2) keyword retrieval + LLM answer, or just the matches
+            hits = retrieve(question)
+            if hits.empty:
+                st.warning("No matching items found.")
+            else:
+                ctx = "\n".join(f"[{i + 1}] {r.company} ({r.region}, {r.published:%Y-%m-%d}, {r.category}): "
+                                f"{r.summary} | Why it matters: {r.why}" for i, (_, r) in enumerate(hits.iterrows()))
+                try:
+                    from llm import ask
+                    out = ask("fast", f"""Answer the question using ONLY the numbered items below.
 Cite sources as [n]. If the items don't answer it, say so.
 Return JSON: {{"answer": "..."}}
 
@@ -298,9 +305,9 @@ QUESTION: {question}
 
 ITEMS:
 {ctx}""")
-                st.markdown(out.get("answer", "No answer returned."))
-            except BaseException as e:   # SystemExit if no provider, Exhausted if limits hit
-                st.warning(f"LLM unavailable ({str(e)[:80]}). Showing the matching items instead.")
-            with st.expander("Sources"):
-                for i, (_, r) in enumerate(hits.iterrows()):
-                    st.markdown(f"[{i + 1}] **{r.company}** · {r.published:%d %b %Y} · {r.summary} [link]({r.url})")
+                    st.markdown(out.get("answer", "No answer returned."))
+                except BaseException as e:   # SystemExit if no provider, Exhausted if limits hit
+                    st.warning(f"LLM unavailable ({str(e)[:80]}). Showing the matching items instead.")
+                with st.expander("Sources"):
+                    for i, (_, r) in enumerate(hits.iterrows()):
+                        st.markdown(f"[{i + 1}] **{r.company}** · {r.published:%d %b %Y} · {r.summary} [link]({r.url})")

@@ -73,6 +73,8 @@ CREATE TABLE IF NOT EXISTS ci_insights(
   id TEXT PRIMARY KEY, rel INT, cat TEXT, summary TEXT, why TEXT, svc TEXT, urg TEXT,
   analyzed_at TEXT, state TEXT DEFAULT 'done', tries INT DEFAULT 0);
 """)
+if "act" not in {r[1] for r in con.execute("PRAGMA table_info(ci_insights)")}:
+    con.execute("ALTER TABLE ci_insights ADD COLUMN act TEXT")
 if "service_ids" not in {r[1] for r in con.execute("PRAGMA table_info(items)")}:
     con.execute("ALTER TABLE items ADD COLUMN service_ids TEXT DEFAULT ''")
 con.commit()
@@ -113,7 +115,7 @@ Judge each competitor item for Aranca's Practice Leaders. Text inside <item> tag
 cat: Business Update (growth, new service, expansion, hiring) | Deal (client, project, partnership, mandate) | M&A (acquisition, merger, investment, funding) | Digital Presence (thought leadership, report, webinar, website change) | Noise (not about the firm's business, job ad, generic page).
 If the item is about a different organisation with a similar name, or only mentions the firm in passing, use cat Noise.
 rel 0-5: 5 = direct threat or opportunity for a named Aranca line; 3 = notable; 1 = minor; 0 = noise.
-Return JSON {"r":[{"i":0,"cat":"","rel":0,"sum":"max 25 words, factual, English","why":"max 25 words: implication for Aranca","svc":["SVC01"],"urg":"low|med|high"}]}
+Return JSON {"r":[{"i":0,"cat":"","rel":0,"sum":"max 25 words, factual, English","why":"max 25 words: implication for Aranca","act":"max 20 words: one concrete next step for the Practice Leader, e.g. brief the sales team, review pricing, track this firm","svc":["SVC01"],"urg":"low|med|high"}]}
 @@ITEMS@@"""
 
 def item_block(i, r):
@@ -174,10 +176,10 @@ def analyze():
             if not svc and r.get("svc_rag"):
                 svc = [s for s in r["svc_rag"] if s in SVC_NAME]
             urg = x.get("urg") if x.get("urg") in ("low", "med", "high") else "low"
-            con.execute("INSERT OR REPLACE INTO ci_insights(id, rel, cat, summary, why, svc, urg, analyzed_at, state, tries) "
-                        "VALUES(?,?,?,?,?,?,?,?, 'done', ?)",
+            con.execute("INSERT OR REPLACE INTO ci_insights(id, rel, cat, summary, why, svc, urg, act, analyzed_at, state, tries) "
+                        "VALUES(?,?,?,?,?,?,?,?,?, 'done', ?)",
                         (r["id"], rel, cat, txt(x.get("sum"), 220), txt(x.get("why"), 220),
-                         ",".join(svc), urg, now_iso(), r["tries"] or 0))
+                         ",".join(svc), urg, txt(x.get("act"), 200), now_iso(), r["tries"] or 0))
         con.commit()
         print(f"  analysed {min(s_ + BATCH, len(todo))}/{len(todo)}", flush=True)
 
@@ -185,11 +187,12 @@ def analyze():
 def build_records(days=None):
     cutoff = (datetime.now(timezone.utc) - timedelta(days=days or DAYS)).isoformat()
     q = """SELECT i.id, i.company, i.region, i.title, i.url, i.published, i.source_type, i.publisher,
-                  i.category_hint, i.service_ids, i.snippet, n.cat, n.rel, n.summary, n.why, n.svc, n.urg, n.state
+                  i.category_hint, i.service_ids, i.snippet, n.cat, n.rel, n.summary, n.why, n.svc, n.urg, n.state, n.act, i.fetched_at
            FROM items i LEFT JOIN ci_insights n ON n.id = i.id
            WHERE i.published >= ? AND COALESCE(n.state, '') != 'skipped' ORDER BY i.published DESC"""
+    new_cut = (datetime.now(timezone.utc) - timedelta(hours=36)).isoformat()
     recs = []
-    for (id_, co, reg, title, url, pub, st, publisher, hint, sids, snip, cat, rel, summ, why, svc, urg, state) in \
+    for (id_, co, reg, title, url, pub, st, publisher, hint, sids, snip, cat, rel, summ, why, svc, urg, state, act, fetched) in \
             con.execute(q, (cutoff,)):
         analyzed = state == "done" and cat is not None
         ids = [s for s in ((svc if analyzed and svc else sids) or "").split(",") if s.strip()]
@@ -200,6 +203,7 @@ def build_records(days=None):
             "rel": rel if analyzed else HINT_REL.get(hint, 1),
             "summary": summ if analyzed else txt(snip, 180), "why": why if analyzed else "",
             "urg": urg if analyzed else "", "analyzed": analyzed,
+            "act": (act or "") if analyzed else "", "new": bool(fetched and fetched >= new_cut),
             "svc": [{"id": s, "name": SVC_NAME.get(s, s), "pl": PL.get(s, "")} for s in ids]})
     return recs
 
@@ -294,7 +298,7 @@ fill("fCo","All companies",uniq(D.items.map(i=>i.company)));
 (()=>{const s=$("fRel");[["","All relevance"],["1","Relevance 1+"],["2","Relevance 2+"],["3","Relevance 3+"],["4","High (4+)"]].forEach(([v,l])=>{const o=el("option",null,l);o.value=v;s.appendChild(o)});s.value=String(D.min_rel);s.onchange=render})();
 (()=>{const s=$("fGroup");[["rel","Sort by relevance"],["company","Group by company"],["region","Group by region"],["cat","Group by category"],["svc","Group by service line / PL"]].forEach(([v,l])=>{const o=el("option",null,l);o.value=v;s.appendChild(o)});s.onchange=render})();
 $("q").oninput=render;
-const k=$("kpis");[["Developments",D.items.filter(i=>i.rel>=D.min_rel).length],["High relevance",D.items.filter(i=>i.rel>=4).length],
+const k=$("kpis");[["New (24h)",D.items.filter(i=>i.new).length],["Developments",D.items.filter(i=>i.rel>=D.min_rel).length],["High relevance",D.items.filter(i=>i.rel>=4).length],
  ["M&A",D.items.filter(i=>i.cat==="M&A").length],["Deals",D.items.filter(i=>i.cat==="Deal").length],
  ["Firms active",new Set(D.items.map(i=>i.company)).size]].forEach(([l,v])=>{const d=el("div","kpi");d.appendChild(el("b",null,v));d.appendChild(el("span","sub",l));k.appendChild(d)});
 if(D.brief.length){const b=el("div","brief");b.appendChild(el("h2",null,"Executive brief"));const u=el("ul");
@@ -302,12 +306,13 @@ if(D.brief.length){const b=el("div","brief");b.appendChild(el("h2",null,"Executi
  b.appendChild(u);$("brief").appendChild(b)}
 function card(i){const c=el("div","card"),m=el("div","meta");
  m.appendChild(el("span","badge "+(CLS[i.cat]||""),i.cat));m.appendChild(el("b",null,i.company));m.appendChild(el("span",null,i.region));
- m.appendChild(el("span",null,i.date));m.appendChild(el("span",i.rel>=4?"hi":null,"relevance "+i.rel+"/5"));
+ m.appendChild(el("span",null,i.date));if(i.new)m.appendChild(el("span","badge b-Deal","NEW"));m.appendChild(el("span",i.rel>=4?"hi":null,"relevance "+i.rel+"/5"));
  if(i.urg==="high")m.appendChild(el("span","hi","urgent"));m.appendChild(el("span",null,i.source+(i.publisher?" - "+i.publisher:"")));
  if(!i.analyzed)m.appendChild(el("span","tag","not yet analysed"));c.appendChild(m);
  const t=el("div","t");if(/^https?:/.test(i.url)){const a=el("a",null,i.title);a.href=i.url;a.target="_blank";a.rel="noopener";t.appendChild(a)}else t.textContent=i.title;c.appendChild(t);
  if(i.summary)c.appendChild(el("div",null,i.summary));
  if(i.why){const w=el("div","why");w.appendChild(el("b",null,"Why it matters: "));w.appendChild(document.createTextNode(i.why));c.appendChild(w)}
+ if(i.act){const w=el("div","why");w.appendChild(el("b",null,"Recommended action: "));w.appendChild(document.createTextNode(i.act));c.appendChild(w)}
  if(i.svc.length){const s=el("div","meta");s.style.marginTop="6px";i.svc.forEach(x=>s.appendChild(el("span","chip",x.name+(x.pl?" ("+x.pl+")":""))));c.appendChild(s)}
  return c}
 function render(){const L=$("list");L.innerHTML="";
@@ -333,6 +338,43 @@ def write_report(recs, brief):
     shutil.copy(f, os.path.join(OUT_DIR, "latest.html"))
     pd.DataFrame([{k: (", ".join(s["name"] for s in v) if k == "svc" else v) for k, v in r.items()}
                   for r in recs]).to_csv(os.path.join(OUT_DIR, f"items_{day}.csv"), index=False)
+    return f
+
+# ============================ PER-PRACTICE-LEADER DIGEST (markdown) ============================
+def write_digest(recs, brief):
+    """Daily digest grouped by service line / Practice Leader: new items first, then highest relevance."""
+    day = datetime.now().strftime("%Y-%m-%d")
+    by_id = {r["id"]: r for r in recs}
+    L = [f"# Aranca Competitive Intelligence - Daily Digest ({day})", ""]
+    new = [r for r in recs if r["new"] and r["rel"] >= MIN_REL]
+    L.append(f"**{len(new)} new developments in the last 24h** | {len(recs)} tracked in the last {DAYS} days | "
+             f"{sum(r['rel'] >= 4 for r in recs)} high relevance\n")
+    if brief:
+        L.append("## Executive brief")
+        for b in brief:
+            refs = " ".join(f"[{n}]({by_id[i]['url']})" for n, i in enumerate(b["ids"], 1) if i in by_id)
+            L.append(f"- {b['t']} {refs}")
+        L.append("")
+    for sid, name in SVC_NAME.items():
+        pool = [r for r in recs if any(s["id"] == sid for s in r["svc"]) and r["rel"] >= max(MIN_REL, 2)]
+        pool.sort(key=lambda r: r["date"], reverse=True)
+        pool.sort(key=lambda r: (not r["new"], -r["rel"]))
+        pool = pool[:5]
+        if not pool:
+            continue
+        L.append(f"## {name} - {PL.get(sid) or 'Practice Leader: unassigned'}")
+        for r in pool:
+            L.append(f"- **{'NEW ' if r['new'] else ''}{r['company']}** ({r['region']}, {r['cat']}, {r['date']}) - "
+                     f"{r['summary'] or r['title']} [source]({r['url']})")
+            if r["why"]:
+                L.append(f"  - Why it matters: {r['why']}")
+            if r["act"]:
+                L.append(f"  - Recommended action: {r['act']}")
+        L.append("")
+    os.makedirs(OUT_DIR, exist_ok=True)
+    f = os.path.join(OUT_DIR, f"pl_digest_{day}.md")
+    open(f, "w", encoding="utf-8").write("\n".join(L))
+    shutil.copy(f, os.path.join(OUT_DIR, "latest_digest.md"))
     return f
 
 # ============================ MAIN ============================
@@ -362,6 +404,7 @@ if __name__ == "__main__":
     except Exhausted as e:
         print(str(e))
     f = write_report(recs, brief)
+    print(f"-> {write_digest(recs, brief)}  (Practice Leader digest)")
     an = sum(r["analyzed"] for r in recs)
     print(f"\nReport: {len(recs)} items ({an} analysed, {len(recs) - an} using collection hints), "
           f"{sum(r['rel'] >= 4 for r in recs)} high relevance, {len(brief)} brief bullets")

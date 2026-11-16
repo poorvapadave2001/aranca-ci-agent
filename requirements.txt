@@ -1,11 +1,19 @@
+# pipeline
 pandas
+numpy
 requests
 beautifulsoup4
 feedparser
 trafilatura
 rapidfuzz
-openai
 python-dotenv
-ddgs
-tavily-pythonfastembed
-numpy
+openai              # OpenAI-compatible client, used for Groq / Gemini / Cerebras
+ddgs                # free news + web search fallback
+tavily-python       # optional search API (TAVILY_API_KEY)
+fastembed           # local embeddings (no API tokens)
+# dashboard
+streamlit
+plotly
+# one-off profile builder (src/profile.py)
+groq
+

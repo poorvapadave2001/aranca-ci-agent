@@ -459,6 +459,43 @@ def page_changes(c, cutoff=None):
     return out
 
 # ---------------- firm context from competitors.csv + monitor_specs.json ----------------
+# ---------------- source: LinkedIn posts (public search only, no login, no scraping of linkedin.com) ----------------
+LINKEDIN = os.getenv("LINKEDIN", "1") == "1"
+LI_ID = re.compile(r"(?:activity|ugcPost|share)[-:](\d{16,19})")
+
+def linkedin_date(url):
+    """LinkedIn post ids embed a millisecond timestamp in their top bits: ts_ms = id >> 22.
+    This gives a real publication date without opening LinkedIn. None if the url has no post id."""
+    m = LI_ID.search(url or "")
+    if not m:
+        return None
+    try:
+        d = datetime.fromtimestamp((int(m.group(1)) >> 22) / 1000, tz=timezone.utc)
+    except Exception:
+        return None
+    return d if datetime(2015, 1, 1, tzinfo=timezone.utc) < d <= datetime.now(timezone.utc) + timedelta(days=1) else None
+
+def linkedin_items(c, cutoff):
+    """Public LinkedIn posts that mention the firm, found through the search engine (site:linkedin.com/posts)."""
+    if not LINKEDIN:
+        return []
+    try:
+        from ddgs import DDGS
+        res = DDGS().text(f'site:linkedin.com/posts "{c["aliases"][0]}"', max_results=10,
+                          timelimit="d" if LOOKBACK_DAYS <= 1 else "w" if LOOKBACK_DAYS <= 7 else "m")
+    except Exception:
+        return []
+    out = []
+    for r in res or []:
+        url = r.get("href") or r.get("url") or ""
+        d = linkedin_date(url)
+        title, snip = clean(r.get("title")), clean(r.get("body"))
+        if not d or d < cutoff or "linkedin.com" not in url or not mentions(title + " " + snip, c["aliases"]):
+            continue
+        out.append(_item(c, title, snip, url.split("?")[0], d, "LinkedIn", "linkedin"))
+    time.sleep(1)
+    return out
+
 def load_specs():
     try:
         return json.load(open(SPEC_F, encoding="utf-8"))
@@ -493,7 +530,7 @@ if __name__ == "__main__":
     load_recent()
     cutoff = datetime.now(timezone.utc) - timedelta(days=LOOKBACK_DAYS)
     SOURCES = [("news", news_items), ("feed", site_feed_items),
-               ("sitemap", sitemap_items), ("pagechg", page_changes)]
+               ("sitemap", sitemap_items), ("pagechg", page_changes), ("linkedin", linkedin_items)]
     tot = {s: 0 for s, _ in SOURCES}
     total_f = total_k = 0
 

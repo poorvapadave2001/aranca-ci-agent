@@ -17,9 +17,9 @@ for p in [x.strip() for x in os.getenv("LLM_PROVIDERS", "groq").split(",") if x.
         CHAIN.append({"name": p, "client": OpenAI(base_url=base, api_key=os.environ[key]),
                       "fast": os.getenv(f"{p.upper()}_EXTRACT", m_fast),
                       "best": os.getenv(f"{p.upper()}_SCORE", m_best), "dead": False})
-if not CHAIN:
+if not CHAIN and os.getenv("DRY_RUN") != "1":
     raise SystemExit("No LLM provider configured. Set LLM_PROVIDERS and API keys in .env")
-print("LLM chain:", " -> ".join(c["name"] for c in CHAIN))
+print("LLM chain:", " -> ".join(c["name"] for c in CHAIN) or "none (DRY_RUN)")
 
 CACHE_F = os.getenv("LLM_CACHE", "data/llm_cache2.json")
 os.makedirs(os.path.dirname(CACHE_F) or ".", exist_ok=True)
@@ -122,7 +122,7 @@ def ask(role, prompt):
                 else:                                     # bad JSON, 5xx, network: short retry
                     print(f"  [{p['name']}] retry {a + 1}/3:", m[:120])
                     time.sleep(3 * (a + 1))
-    if all(p["dead"] for p in CHAIN):
+    if all(p["dead"] for p in CHAIN):   # also true for an empty chain
         raise Exhausted("All providers exhausted. Progress is cached; rerun later.")
     return {}
 

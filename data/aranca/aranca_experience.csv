@@ -1,0 +1,311 @@
+﻿service_id,geography,industry,assignment_example
+SVC01,Asia,Automotive,Specialty coatings market entry strategy for automotive OEMs in Southeast Asia
+SVC01,Asia,Healthcare & Life Sciences,CDMO partner identification and feasibility for API manufacturing expansion in India
+SVC01,Asia,Banking & Financial Services,GTM strategy for a B2B payments platform targeting exporters in Vietnam
+SVC01,Asia,Industrial Equipment,Market expansion strategy for industrial robotics and automation solutions in Vietnam
+SVC01,Asia,"Agri, Consumer & Retail",Retail channel partner identification for premium infant nutrition products in China
+SVC01,Africa,Healthcare & Life Sciences,Market feasibility for portable ultrasound and diagnostic imaging devices in Nigeria
+SVC01,Africa,Banking & Financial Services,GTM and partnership strategy for mobile SME lending in South Africa
+SVC01,Africa,Industrial Equipment,Expansion strategy for small tractors and agricultural implements in East Africa
+SVC01,Africa,"Agri, Consumer & Retail",Distributor identification for mass market personal care products in West Africa
+SVC01,Africa,"Technology, Media & Telecom",Market opportunity assessment for fleet telematics solutions in South Africa
+SVC01,North America,"Technology, Media & Telecom",Market entry strategy for high performance adhesives in US aerospace applications
+SVC01,North America,Healthcare & Life Sciences,Regulatory assessment and CRO partner identification for cell and gene therapy
+SVC01,North America,"Technology, Media & Telecom",GTM strategy for embedded finance solutions on US digital commerce platforms
+SVC01,North America,"Technology, Media & Telecom",Expansion strategy for connected car and telematics software in North America
+SVC01,North America,"Agri, Consumer & Retail",Market feasibility study for plant based protein snacks in the US
+SVC01,South America,"Agri, Consumer & Retail",Market entry strategy for herbicides and fungicides crop protection in Brazil
+SVC01,South America,Healthcare & Life Sciences,Feasibility study for private dialysis center chains in Brazil and Chile
+SVC01,South America,Automotive,Expansion strategy and aftermarket distributor identification for automotive filters in Argentina
+SVC01,South America,"Agri, Consumer & Retail",Distribution strategy and modern trade partnerships for snack bars in Peru
+SVC01,South America,Industrial Equipment,Market opportunity for industrial pumps and valves in Chile mining sector
+SVC01,Middle East,Materials,Distributor identification for water desalination chemicals market entry in Saudi Arabia
+SVC01,Middle East,Banking & Financial Services,GTM and partner strategy for SME digital lending in Saudi Arabia
+SVC01,Middle East,Logistics & Infrastructure,Fleet operator partnerships for electric last mile delivery vans in UAE
+SVC01,Middle East,Energy,System integrator identification for industrial IoT in Qatar oil and gas
+SVC01,Middle East,"Agri, Consumer & Retail",GTM strategy and supermarket partnerships for premium dairy products in GCC
+SVC01,Europe,Paper & Packaging,Market entry strategy for specialty polymers in German and French packaging
+SVC01,Europe,"Technology, Media & Telecom",Market feasibility study for prescription digital therapeutics apps in the EU
+SVC01,Europe,Banking & Financial Services,GTM and partnership strategy for open banking API platforms in UK
+SVC01,Europe,"Technology, Media & Telecom",Expansion strategy for electric vehicle charging hardware and software in Europe
+SVC01,Europe,"Agri, Consumer & Retail",Retail distribution partner identification for premium organic food brands in France
+SVC02,Asia,Banking & Financial Services,Wealth management market sizing for an Indian private sector banking group
+SVC02,Asia,Healthcare & Life Sciences,Market entry and regulatory strategy for a biopharmaceutical company in South Korea
+SVC02,Asia,Materials,Competitive intelligence and positioning for a specialty agrochemicals company in India
+SVC02,Asia,Materials,Market sizing and opportunity assessment for a Japanese carbon fiber composites manufacturer
+SVC02,Asia,"Agri, Consumer & Retail",Market share defense strategy for a South Korean personal care brand
+SVC02,Asia,"Agri, Consumer & Retail",Adjacency growth strategy for a Chinese food and beverage packaging company
+SVC02,Asia,Logistics & Infrastructure,Market sizing and demand assessment for smart city infrastructure development in India
+SVC02,Africa,Banking & Financial Services,Market sizing and opportunity assessment for a mobile banking provider in West Africa
+SVC02,Africa,Healthcare & Life Sciences,Market entry and distribution strategy for a generic medicines company in East Africa
+SVC02,Africa,"Agri, Consumer & Retail",Competitive intelligence and demand analysis for a fertilizer manufacturer in North Africa
+SVC02,Africa,"Agri, Consumer & Retail",Market share defense strategy for a packaged foods company in East Africa
+SVC02,Africa,Paper & Packaging,Market sizing and white space analysis for FMCG packaging across African markets
+SVC02,Africa,Logistics & Infrastructure,Adjacency growth strategy for an affordable housing developer in Nigeria and Kenya
+SVC02,Africa,Healthcare & Life Sciences,Revenue model and GTM strategy for an affordable diagnostics company entering Africa
+SVC02,North America,Healthcare & Life Sciences,Competitive benchmarking and pipeline analysis for a US oncology pharmaceuticals company
+SVC02,North America,Materials,Market entry strategy for an adhesives and sealants manufacturer entering North America
+SVC02,North America,Materials,GTM strategy and revenue acceleration for a US aerospace composites manufacturer
+SVC02,North America,Paper & Packaging,Adjacency and diversification strategy for a Canadian sustainable packaging company
+SVC02,North America,"Technology, Media & Telecom",Market sizing and demand assessment for the US data center infrastructure sector
+SVC02,North America,"Technology, Media & Telecom",Competitive intelligence and positioning for a US cloud computing and SaaS company
+SVC02,North America,Industrial Equipment,Market entry strategy for a food processing equipment manufacturer in North America
+SVC02,South America,Healthcare & Life Sciences,Market entry feasibility for a pharma company entering the Brazil OTC medicines segment
+SVC02,South America,Materials,Competitive intelligence and positioning strategy for a Brazilian petrochemicals company
+SVC02,South America,Materials,GTM strategy and channel design for a Chilean mining grade composites manufacturer
+SVC02,South America,"Agri, Consumer & Retail",Market share defense and competitive positioning for a Brazilian personal care company
+SVC02,South America,Paper & Packaging,Adjacency strategy and new segment entry for a Brazilian flexible packaging company
+SVC02,South America,Logistics & Infrastructure,Market sizing and growth opportunity for the Brazilian commercial real estate sector
+SVC02,South America,Banking & Financial Services,Competitive benchmarking and expansion strategy for a Colombian fintech software company
+SVC02,Middle East,Banking & Financial Services,Market sizing and segment assessment for a Saudi Arabia Islamic banking group
+SVC02,Middle East,,Market entry and regulatory strategy for a nutraceuticals company entering GCC
+SVC02,Middle East,Materials,GTM strategy and market entry for a UAE infrastructure composites company
+SVC02,Middle East,"Agri, Consumer & Retail",Market share defense strategy for a GCC halal food and beverage company
+SVC02,Middle East,Healthcare & Life Sciences,Adjacency growth strategy for a GCC food and pharmaceutical packaging company
+SVC02,Middle East,Logistics & Infrastructure,Market sizing and opportunity assessment for Saudi Arabia smart city infrastructure
+SVC02,Middle East,Energy,Market entry and penetration strategy for an oil and gas equipment company in GCC
+SVC02,Europe,Banking & Financial Services,Growth opportunity sizing for a European open banking and embedded finance firm
+SVC02,Europe,Materials,Market entry strategy for a sustainable specialty chemicals company entering European markets
+SVC02,Europe,Energy,GTM strategy and commercial activation for a German wind turbine composites manufacturer
+SVC02,Europe,"Agri, Consumer & Retail",Market share retention strategy for a French premium food and beverage brand
+SVC02,Europe,Healthcare & Life Sciences,Adjacency growth and new category entry for a Nordic pharmaceutical packaging company
+SVC02,Europe,,Market sizing and demand analysis for the European green building sector
+SVC02,Europe,Industrial Equipment,Market entry and pricing strategy for a German precision engineering machinery manufacturer
+SVC03,Asia,,Financial services adjacency analysis and M&A target screening for Japanese conglomerate
+SVC03,Asia,Automotive,Semiconductor adjacency strategy for automotive chips and edge-AI expansion
+SVC03,Asia,Automotive,Build-buy-partner strategy for EV battery recycling and energy storage expansion
+SVC03,Asia,"Agri, Consumer & Retail",Halal beauty market whitespace analysis for Korean consumer products conglomerate
+SVC03,Asia,Banking & Financial Services,Diversification roadmap for embedded lending and digital wealth management expansion
+SVC03,Asia,,Adjacency prioritization for corporate upskilling and enterprise edtech expansion
+SVC03,Asia,Banking & Financial Services,Growth adjacency assessment for green hydrogen and carbon credit markets
+SVC03,Africa,"Agri, Consumer & Retail","Diversification strategy across food processing, cold-chain logistics, and agri-fintech"
+SVC03,Africa,Healthcare & Life Sciences,"Healthcare adjacency assessment across telemedicine, diagnostics, and insurance services"
+SVC03,Africa,Banking & Financial Services,Telecom expansion roadmap for fintech and tower monetization opportunities
+SVC03,Africa,Banking & Financial Services,Fintech business model expansion into B2B payments and remittance infrastructure
+SVC03,Africa,Energy,Renewable energy growth strategy for distributed solar and green hydrogen
+SVC03,Africa,"Technology, Media & Telecom",FMCG adjacency assessment for private-label manufacturing and digital commerce channels
+SVC03,North America,Banking & Financial Services,Embedded insurance and insurtech partnership strategy for Canadian insurer
+SVC03,North America,"Technology, Media & Telecom",New monetization model assessment for streaming and creator economy platform
+SVC03,North America,,Education diversification strategy across online learning and global campus expansion
+SVC03,North America,Healthcare & Life Sciences,Healthcare diversification roadmap for home care and remote patient monitoring
+SVC03,North America,"Agri, Consumer & Retail",CPG adjacency strategy for functional nutrition and direct-to-consumer wellness brands
+SVC03,South America,Banking & Financial Services,Digital banking adjacency strategy across SME lending and embedded finance
+SVC03,South America,,Biofuels adjacency assessment for biogas and sustainable aviation fuel expansion
+SVC03,South America,Logistics & Infrastructure,"Logistics market assessment for warehousing, e-commerce fulfillment, and electrification"
+SVC03,South America,"Technology, Media & Telecom","Telecom diversification into cloud, cybersecurity, and digital healthcare platforms"
+SVC03,South America,Healthcare & Life Sciences,Healthcare whitespace analysis for medical tourism and pharmacy retail adjacencies
+SVC03,Middle East,Banking & Financial Services,Mid-market banking strategy and growth roadmap for KSA financial sector
+SVC03,Middle East,Banking & Financial Services,Whitespace adjacency assessment for leading UAE banking institution
+SVC03,Middle East,Energy,Petrochemical diversification strategy for green hydrogen and carbon capture opportunities
+SVC03,Middle East,"Agri, Consumer & Retail",Retail adjacency strategy for e-commerce and quick-commerce partnership expansion
+SVC03,Middle East,,Tourism business model strategy for luxury and experiential destination development
+SVC03,Middle East,,Education diversification roadmap for vocational training and global franchise expansion
+SVC03,Europe,Healthcare & Life Sciences,Medtech expansion strategy for AI diagnostics and remote surgery platforms
+SVC03,Europe,"Technology, Media & Telecom",Cybersecurity diversification into sovereign cloud and AI governance solutions
+SVC03,Europe,"Technology, Media & Telecom","Luxury retail adjacency assessment for wellness, hospitality, and digital collectibles"
+SVC03,Europe,Banking & Financial Services,Asset management adjacency strategy for private credit and tokenized investments
+SVC03,Europe,Automotive,Automotive diversification into EV infrastructure and mobility-as-a-service ecosystems
+SVC04,Asia,,Developed enterprise sales playbook and key account framework to accelerate B2B growth
+SVC04,Asia,Healthcare & Life Sciences,Designed oncology go-to-market strategy across Tier 1–3 cities with KOL engagement
+SVC04,Asia,Industrial Equipment,Established distributor performance and incentive framework for construction machinery sales growth
+SVC04,Asia,Logistics & Infrastructure,Built pipeline and win-rate analytics dashboard for manufacturing logistics sales teams
+SVC04,North America,Banking & Financial Services,Developed broker channel strategy and performance framework across regional insurance offices
+SVC04,North America,"Agri, Consumer & Retail",Designed precision agriculture upsell program and dealer sales training framework
+SVC04,North America,,Developed key account growth and opportunity management framework for aftermarket services
+SVC04,North America,Healthcare & Life Sciences,Built value-based pricing model for surgical robotics procurement and contracting
+SVC04,South America,Industrial Equipment,Developed aftermarket commercial strategy and pricing framework for mining equipment services
+SVC04,South America,Healthcare & Life Sciences,Built hospital and pharmacy key account program for diagnostics portfolio growth
+SVC04,South America,,Redesigned B2B sales structure and CRM governance for enterprise segments
+SVC04,South America,,"Built dynamic pricing model incorporating freight, demand, and commodity signals"
+SVC04,Middle East,,Developed aftermarket sales strategy and key account program for aircraft maintenance services
+SVC04,Middle East,Healthcare & Life Sciences,Created go-to-market strategy for medical devices targeting healthcare expansion projects
+SVC04,Middle East,Banking & Financial Services,Built merchant acquisition engine and referral program for GCC payments platform
+SVC04,Middle East,"Agri, Consumer & Retail",Redesigned export sales and distributor strategy for dairy products across MENA
+SVC04,Europe,"Agri, Consumer & Retail",Redesigned omnichannel sales and clientele strategy across retail and travel markets
+SVC04,Europe,"Agri, Consumer & Retail",Optimized key account management framework for pan-European foodservice and hospitality clients
+SVC04,Europe,Banking & Financial Services,Built commercial analytics dashboard for corporate banking relationship managers and accounts
+SVC04,Europe,Paper & Packaging,Designed contract pricing framework for pulp and paper industry customers
+SVC05,Asia,Banking & Financial Services,Investment prioritization framework for Indian private banking transformation
+SVC05,Asia,,Greenfield feasibility study for Taiwanese semiconductor materials expansion
+SVC05,Asia,Automotive,Cost optimization program for South Korean automotive supplier
+SVC05,Asia,Materials,Scenario modeling for Japanese composite materials manufacturer
+SVC05,Asia,"Technology, Media & Telecom",Market feasibility study for Southeast Asian data center operator
+SVC05,Africa,Automotive,Operational turnaround for South African automotive components supplier
+SVC05,Africa,,Feasibility assessment for Egyptian medtech manufacturing expansion
+SVC05,Africa,Paper & Packaging,Scenario planning for Pan-African packaging company
+SVC05,Africa,"Technology, Media & Telecom",Investment prioritization for Kenyan digital banking platform
+SVC05,North America,"Technology, Media & Telecom",Strategic investment roadmap for US data center operator
+SVC05,North America,,Portfolio optimization for Canadian medtech company
+SVC05,North America,Automotive,Financial modeling for US automotive OEM supplier
+SVC05,North America,Paper & Packaging,Greenfield feasibility for US packaging materials manufacturer
+SVC05,North America,,Scenario analysis for North American semiconductor materials firm
+SVC05,South America,Banking & Financial Services,Investment planning for Brazilian banking digital transformation
+SVC05,South America,Automotive,Operating model redesign for Mexican automotive components supplier
+SVC05,South America,Materials,Feasibility study for Chilean mining composites producer
+SVC05,South America,Banking & Financial Services,Scenario modeling for Colombian fintech expansion
+SVC05,South America,Paper & Packaging,Capital allocation planning for Argentine packaging manufacturer
+SVC05,Middle East,Banking & Financial Services,Capital allocation optimization for UAE banking group
+SVC05,Middle East,"Technology, Media & Telecom",Greenfield feasibility for GCC data center expansion
+SVC05,Middle East,Materials,Portfolio strategy for Saudi petrochemical and composites firm
+SVC05,Middle East,Healthcare & Life Sciences,Operating model redesign for Qatari medtech and healthcare group
+SVC05,Europe,Automotive,Portfolio restructuring for German automotive manufacturer
+SVC05,Europe,Banking & Financial Services,Regulatory investment planning for UK banking institution
+SVC05,Europe,"Technology, Media & Telecom",Integration value tracking for Dutch logistics and data center firm
+SVC05,Europe,Energy,Transformation governance for French energy and utilities group
+SVC05,Europe,,Scenario modeling for European semiconductor materials company
+SVC06,Asia,"Agri, Consumer & Retail",Market sizing and whitespace analysis for a South Korean consumer electronics company
+SVC06,Asia,Banking & Financial Services,Curated news alert framework and competitive tracking for an Indian private sector bank
+SVC06,Asia,,Competitor intelligence and financial benchmarking for a Japanese conglomerate
+SVC06,Asia,,Competitive benchmarking for a Taiwanese semiconductor materials manufacturer
+SVC06,Asia,Automotive,Product innovation tracking and peer analysis for an Indian automotive OEM
+SVC06,Africa,Healthcare & Life Sciences,Competitive intelligence for a Pan-African healthcare market
+SVC06,Africa,"Technology, Media & Telecom",Market entry research and competitor analysis for a South African data center developer
+SVC06,Africa,Banking & Financial Services,Competitor profiling and peer benchmarking dashboard for a Nigerian banking group
+SVC06,Africa,"Technology, Media & Telecom",Market landscape mapping and segment analysis for a South African telecom operator
+SVC06,Africa,"Agri, Consumer & Retail",Financial performance benchmarking for an Egyptian retail group
+SVC06,North America,Energy,Market sizing and competitive landscape mapping for a Canadian energy company
+SVC06,North America,Healthcare & Life Sciences,Competitor profiling and financial benchmarking for a US healthcare
+SVC06,North America,Paper & Packaging,Competitive intelligence and packaging materials market analysis for a Canadian company
+SVC06,North America,,Financial benchmarking and peer analysis for a US medtech device manufacturer
+SVC06,North America,Industrial Equipment,Curated news alerts and strategic briefings for a US industrial equipment manufacturer
+SVC06,South America,Banking & Financial Services,Competitor intelligence and market entry research for a Brazilian fintech
+SVC06,South America,"Technology, Media & Telecom",Market sizing and adjacency mapping for a Colombian telecom provider
+SVC06,South America,"Agri, Consumer & Retail",Competitive and financial benchmarking for a Mexican consumer goods company
+SVC06,South America,,Industry landscape and whitespace analysis for a Chile based company
+SVC06,South America,Banking & Financial Services,Market intelligence and competitive tracking for an Argentine banking institution
+SVC06,Middle East,,Market sizing and competitive intelligence for a Saudi Vision 2030-aligned conglomerate
+SVC06,Middle East,Banking & Financial Services,Competitor profiling and benchmarking dashboard for a UAE based bank
+SVC06,Middle East,,Market landscape and whitespace mapping for a Qatari government entity
+SVC06,Middle East,"Technology, Media & Telecom",Competitive intelligence and data center market analysis for a Dubai-based tech firm
+SVC06,Middle East,,Market sizing and peer benchmarking for a KSA medtech startup
+SVC06,Europe,,Competitor profiling and benchmarking program for a German industrial manufacturer
+SVC06,Europe,,Market intelligence and competitive tracking for a UK financial services institution
+SVC06,Europe,Logistics & Infrastructure,Financial benchmarking and peer analysis for a Dutch logistics company
+SVC06,Europe,Energy,Curated news alerts and impact analysis for a French energy utility
+SVC06,Europe,Automotive,Competitive intelligence for an Italian automotive supplier
+SVC07,Asia,Automotive,VoC program for Japanese automotive components firm
+SVC07,Asia,,Brand positioning for Korean semiconductor materials company
+SVC07,Asia,Logistics & Infrastructure,Product Adoption and Unmet Needs Assessment for GPS Solutions in the Indian Logistics Sector
+SVC07,Asia,,Product adoption research for Taiwanese electronics firm
+SVC07,Asia,,Channel preference analysis for Asian industrial distributor
+SVC07,Africa,,NPS benchmarking for Nigerian financial services firm
+SVC07,Africa,Automotive,Dealer experience study for South African automotive distributor
+SVC07,Africa,"Technology, Media & Telecom",Brand benchmarking for Pan-African telecom operator
+SVC07,Africa,,Supplier evaluation for Egyptian industrial manufacturer
+SVC07,Africa,Banking & Financial Services,Customer satisfaction study for Kenyan banking institution
+SVC07,North America,Industrial Equipment,Win/loss analysis for US industrial equipment firm
+SVC07,North America,,Customer segmentation for Canadian medtech company
+SVC07,North America,,Brand perception and awareness study for US-based Claims management firm
+SVC07,North America,Paper & Packaging,Retention study for packaging materials company
+SVC07,North America,Automotive,VoC program for North American automotive supplier
+SVC07,Latin America,Banking & Financial Services,Market entry VoC for Brazilian fintech
+SVC07,Latin America,Paper & Packaging,Satisfaction study for Mexican packaging manufacturer
+SVC07,Latin America,"Technology, Media & Telecom",Brand positioning for Colombian telecom provider
+SVC07,Latin America,,Channel effectiveness for Chilean industrial firm
+SVC07,Latin America,Banking & Financial Services,Customer experience study for Argentine banking group
+SVC07,Middle East,Banking & Financial Services,Satisfaction study for UAE banking group
+SVC07,Middle East,Materials,Brand health mapping for Saudi petrochemical composites firm
+SVC07,Middle East,,Supplier preference study for Saudi medtech company
+SVC07,Middle East,"Technology, Media & Telecom",Customer experience research for UAE data center operator
+SVC07,Middle East,,Buyer behavior study for GCC industrial manufacturer
+SVC07,Europe,,Customer experience tracking for UK financial institution
+SVC07,Europe,,Brand perception study for German engineering firm
+SVC07,Europe,Logistics & Infrastructure,NPS analytics for Dutch logistics provider
+SVC07,Europe,Materials,Innovation assessment for specialty chemicals firm
+SVC07,Europe,Automotive,Buyer behavior study for French automotive supplier
+SVC08,Asia,Materials,Inorganic growth roadmap for the Indian water treatment chemicals market
+SVC08,Asia,Industrial Equipment,Revenue and cost synergy modeling for a CNC equipment manufacturer merger
+SVC08,Asia,,Integration governance framework for a suspension components manufacturer acquisition
+SVC08,Asia,,Market mapping & profiling of waste management companies in Southeast Asia
+SVC08,Asia,,Due-diligence of facility management company across select South Asian Markets
+SVC08,Asia,,Commercial due-diligence of an imitation jewelry manufacturer in India
+SVC08,Africa,"Technology, Media & Telecom",Market entry and adjacency mapping in African mobile telecom networks
+SVC08,Africa,"Agri, Consumer & Retail",Synergy phasing and valuation analysis for African fertilizer producer consolidation
+SVC08,Africa,,Technology stack rationalization for merged gold processing operations
+SVC08,Africa,,Identification & profiling of property management companies
+SVC08,Africa,,M&A prospect identification for auto aftermarket parts distribution
+SVC08,Africa,,Commercial due-diligence of an office interior design company
+SVC08,North America,Banking & Financial Services,Investment opportunity assessment for a managed IT services provider serving the US Insurance sector
+SVC08,North America,Logistics & Infrastructure,Company profiling & strategic fit analysis of real estate consulting firms in the US
+SVC08,North America,,M&A assessment of home services companies across the US and Canada
+SVC08,North America,,Sector M&A playbook for the US UAV and drone systems segment
+SVC08,North America,,Cost and revenue synergy modeling in the US munitions sector
+SVC08,North America,,Cultural assessment and alignment workshops for an avionics systems integration
+SVC08,South America,Banking & Financial Services,Commercial due diligence on a Brazilian digital lending platform targeting underbanked SMEs
+SVC08,South America,,Commercial due diligence on a Peruvian premium natural cosmetic brand evaluating a bolt-on acquisition
+SVC08,South America,Industrial Equipment,Target identification of precision engineering and machining companies supplying mining equipment components
+SVC08,South America,,Margin expansion roadmap for an Argentine aftermarket auto components deal
+SVC08,South America,,Readiness planning and customer communication for a corrugated board merger
+SVC08,South America,,Investment thesis development for Brazilian iron ore mining assets
+SVC08,Middle East,,Market mapping of wedding hall facility providers across the GCC
+SVC08,Middle East,,JV partner identification for an aquaculture business in the Middle East
+SVC08,Middle East,,Partner selection for a motorcycle dealership business in the GCC
+SVC08,Middle East,Paper & Packaging,Adjacency mapping for diversification into rigid plastics packaging
+SVC08,Middle East,Materials,Operational improvement roadmap for a regional fiber broadband merger
+SVC08,Middle East,"Technology, Media & Telecom",Integration management design for a telecom tower infrastructure acquisition
+SVC08,Europe,,Target identification & due-diligence in the European laboratory services market
+SVC08,Europe,,M&A opportunity assessment in the private security market across Western Europe
+SVC08,Europe,Automotive,Commercial due-diligence of an electric vehicle battery company
+SVC08,Europe,Industrial Equipment,Inorganic growth strategy roadmap in European hydraulic systems machinery
+SVC08,Europe,Materials,Target outreach and negotiation support for an aluminium producer acquisition
+SVC08,Europe,Materials,Systems migration roadmap for an acquired specialty coatings business
+SVC09,Asia,Automotive,Innovation strategy and product portfolio for a Japanese automotive OEM entering EVs
+SVC09,Asia,"Agri, Consumer & Retail",Consumer intelligence and concept development for a Korean personal care brand
+SVC09,Asia,,Open innovation model design for a Chinese technology company's AI products
+SVC09,Asia,"Agri, Consumer & Retail",New product concept validation for an Indonesian consumer goods company
+SVC09,Asia,Materials,Technology roadmap and product portfolio for a Taiwanese coatings manufacturer
+SVC09,Asia,Healthcare & Life Sciences,Commercialization strategy for a Singapore health tech company entering digital diagnostics
+SVC09,Africa,Banking & Financial Services,Product development strategy for a Nigerian fintech expanding into digital lending
+SVC09,Africa,"Agri, Consumer & Retail",Consumer intelligence and NPD strategy for a South African FMCG brand
+SVC09,Africa,Banking & Financial Services,New product portfolio design for a Pan African mobile banking provider
+SVC09,Africa,Energy,Product launch strategy for a Ghanaian beverage company entering energy drinks
+SVC09,Africa,Materials,Specialty chemicals product strategy for a North African chemicals manufacturer
+SVC09,Africa,,Advanced materials innovation assessment for an East African manufacturing group
+SVC09,North America,Healthcare & Life Sciences,Product innovation strategy and pipeline assessment for a US pharmaceutical company
+SVC09,North America,"Agri, Consumer & Retail",Open innovation model design for a US consumer electronics manufacturer
+SVC09,North America,Healthcare & Life Sciences,Market opportunity and product roadmap for a US healthcare technology company
+SVC09,North America,Energy,Innovation portfolio strategy for a Canadian clean energy company's new products
+SVC09,North America,Banking & Financial Services,Product concept validation for a US fintech company entering embedded finance
+SVC09,North America,Materials,Specialty coatings innovation and product roadmap for a US chemicals company
+SVC09,South America,"Agri, Consumer & Retail",Product innovation strategy and portfolio design for a Brazilian consumer goods company
+SVC09,South America,"Agri, Consumer & Retail",Product concept development for a Chilean food company entering plant based category
+SVC09,South America,Healthcare & Life Sciences,Innovation roadmap for a Mexican pharmaceutical company launching new therapeutic areas
+SVC09,South America,"Agri, Consumer & Retail",Consumer trend analysis and product ideation for an Argentinian personal care brand
+SVC09,South America,Banking & Financial Services,Open innovation strategy for a Brazilian technology company developing fintech products
+SVC09,South America,Healthcare & Life Sciences,Product pipeline design for a South American digital health and diagnostics company
+SVC09,Middle East,"Agri, Consumer & Retail",Product innovation strategy for a Saudi FMCG company aligned with Vision 2030
+SVC09,Middle East,Banking & Financial Services,New product development for a UAE fintech company expanding digital banking suite
+SVC09,Middle East,"Technology, Media & Telecom",Innovation portfolio and product roadmap for a Saudi telecommunications company
+SVC09,Middle East,"Agri, Consumer & Retail",Product portfolio design and innovation strategy for a Kuwaiti food company
+SVC09,Middle East,Energy,Open innovation and startup scouting for a Saudi energy company
+SVC09,Middle East,Healthcare & Life Sciences,Product commercialization strategy for a Qatari healthcare provider expanding digital services
+SVC09,Europe,Automotive,Product innovation strategy for a German automotive manufacturer transitioning to mobility services
+SVC09,Europe,Banking & Financial Services,Innovation portfolio and product roadmap for a UK fintech expanding wealth management
+SVC09,Europe,Healthcare & Life Sciences,R&D portfolio optimization and pipeline strategy for a Swiss pharmaceutical company
+SVC09,Europe,Materials,Specialty coatings and advanced materials product strategy for a Dutch chemicals company
+SVC09,Europe,"Agri, Consumer & Retail",New product concept development for an Italian food and beverage company
+SVC09,Europe,Materials,Biopolymers product development and innovation roadmap for a Belgian materials company
+SVC10,Asia,Banking & Financial Services,Regulatory restructuring advisory and organizational redesign for an Indian private sector bank
+SVC10,Asia,,Program governance and transformation office setup for a Japanese industrial conglomerate
+SVC10,Asia,Materials,Cost rationalization and margin recovery program for a South Korean steel manufacturer
+SVC10,Asia,"Technology, Media & Telecom",Digital transition roadmap and change readiness assessment for a Southeast Asian telecom
+SVC10,Africa,Banking & Financial Services,Post-merger integration roadmap and PMO design for a Nigerian banking group
+SVC10,Africa,"Technology, Media & Telecom",Operational simplification and delivery governance for a South African telecom operator
+SVC10,Africa,Healthcare & Life Sciences,Cost efficiency diagnostic and performance improvement program for an Egyptian retail group
+SVC10,Africa,Healthcare & Life Sciences,Change readiness and transformation tracking framework for a Pan-African healthcare network
+SVC10,North America,Energy,Strategic transformation roadmap and investment prioritization for a Canadian energy company
+SVC10,North America,Healthcare & Life Sciences,Integration governance and organizational consolidation advisory for a US healthcare system
+SVC10,North America,,Operational efficiency and working capital program for a US industrial manufacturer
+SVC10,North America,"Agri, Consumer & Retail",Change enablement and balanced scorecard design for a US retail omnichannel transformation
+SVC10,South America,Banking & Financial Services,Digital banking transformation roadmap and program governance for a Brazilian bank
+SVC10,South America,"Technology, Media & Telecom",Operating model transition and delivery redesign for a Colombian telecom provider
+SVC10,South America,"Agri, Consumer & Retail",Post-acquisition integration and benefit realization tracking for a Mexican consumer goods company
+SVC10,South America,,Workforce change program and KPI framework for a Chilean mining company
+SVC10,Middle East,,Vision 2030-aligned transformation roadmap and program governance for a Saudi conglomerate
+SVC10,Middle East,Banking & Financial Services,Digital transformation governance and organizational redesign for a UAE banking group
+SVC10,Middle East,Materials,Diversification performance benchmarking and KPI framework for a GCC petrochemicals company
+SVC10,Middle East,,Leadership alignment and service modernization program for a Qatari government entity
+SVC10,Europe,,Business model transition advisory and organizational redesign for a German industrial manufacturer
+SVC10,Europe,,Regulatory transformation governance and portfolio oversight for a UK financial services institution
+SVC10,Europe,Logistics & Infrastructure,Integration value realization and performance tracking for a Dutch logistics company
+SVC10,Europe,Energy,Change management and transformation monitoring for a French energy utility

@@ -1,0 +1,4 @@
+tag,n,min_rel,precision,recall,noise_rejected,f1,cat_acc
+baseline_auto_v1,45,1,0.931,0.711,0.714,0.806,0.553
+baseline_v1,45,1,0.793,1.0,0.727,0.885,0.783
+v2,38,1,0.613,0.826,0.2,0.704,0.565
