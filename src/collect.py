@@ -382,6 +382,15 @@ def page_meta(url):
         snip = clean(trafilatura.extract(r.text) or "", 400)
     return title, snip
 
+def looks_like_article(path):
+    segs = [p for p in path.split("/") if p]
+    if not segs:
+        return False
+    if len(segs) >= 2 and CONTENT_PATH.search(path):
+        return True
+    slug = re.sub(r"\.(php|html?|aspx?)$", "", segs[-1], flags=re.I)
+    return len(segs) == 1 and slug.count("-") >= 3     # root-level "long-hyphenated-title" pages
+
 def sitemap_items(c, cutoff):
     name, region, site = c["name"], c["region"], c["url"]
     urls = read_sitemap_urls(site)
@@ -397,7 +406,7 @@ def sitemap_items(c, cutoff):
     cands = []
     for u in new:
         path = urlparse(u).path
-        if STATIC_EXT.search(u) or not CONTENT_PATH.search(path):
+        if STATIC_EXT.search(u) or not looks_like_article(path):
             continue
         if len([p for p in path.split("/") if p]) < 2:
             continue

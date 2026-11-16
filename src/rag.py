@@ -204,9 +204,14 @@ def retrieve(question, k=8):
     return ranked.groupby("company", sort=False).head(3).head(k)
 
 def answer(question, k=8):
+    df = load_items()
+    regions, _, _ = _parse_filters(question, df) if not df.empty else ([], [], None)
+    covered = set(df["region"]) if not df.empty else set()
+    missing = [r for r in regions if r not in covered]
+    note = f" (No stored items for: {', '.join(missing)}.)" if missing else ""
     hits = retrieve(question, k)
     if hits.empty:
-        return {"answer": "No stored developments match that question yet.", "sources": []}
+        return {"answer": text + note, "sources": src}
     ar = match_many([d for d in hits["doc"]], k=2)
     src = [{"company": r.company, "region": r.region, "date": r.published[:10], "summary": r.summary or r.title,
             "url": r.url, "aranca": brief(m)} for r, m in zip(hits.itertuples(), ar)]
