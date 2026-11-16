@@ -108,11 +108,14 @@ def get(url, html_only=True):
 def _has_seq(tokens, sub):
     n = len(sub)
     return bool(n) and any(tokens[i:i + n] == sub for i in range(len(tokens) - n + 1))
+NOISE = re.compile(r"\bhotel|resort|restaurant|real estate listing|for sale\b|church|school\b", re.I)
 
 def mentions(text, aliases):
     """The firm (any alias) must appear as whole words. Short one-word names also need business context.
     Non-ASCII aliases (Japanese/Arabic) use plain substring match."""
     t = (text or "").lower()
+    if NOISE.search(t):
+        return False
     toks = re.findall(r"\w+", t)
     for a in aliases:
         al = (a or "").lower().strip()
