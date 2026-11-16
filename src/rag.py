@@ -1,8 +1,5 @@
 """RAG layer. Local embeddings (fastembed) + numpy: no API tokens spent on retrieval.
-
-  python src/rag.py build                      # embed the Aranca CSVs once -> data/aranca_index.*
-  python src/rag.py match "Acme acquires a Japanese pricing consultancy"
-  python src/rag.py ask "What have Gulf competitors announced this month?"
+  python src/rag.py build | match "text" | ask "question"
 """
 import json, os, re, sqlite3, sys
 from datetime import datetime, timedelta, timezone
@@ -14,8 +11,8 @@ EMB_MODEL = os.getenv("EMB_MODEL", "BAAI/bge-small-en-v1.5")
 ARANCA_DIR = "data/aranca"
 INDEX_F, META_F, ITEM_F = "data/aranca_index.npz", "data/aranca_index.json", "data/item_vecs.npz"
 DB = os.getenv("CI_DB", "data/ci.db")
+GENERIC_TITLES = {"our approach", "impact", "approach", "overview", "benefits", "outcome", "outcomes"}
 
-# ---------------------------------------------------------------- embeddings
 _emb = None
 def embed(texts):
     global _emb
@@ -27,7 +24,6 @@ def embed(texts):
     M = np.asarray(list(_emb.embed([t[:1000] for t in texts])), dtype="float32")
     return M / (np.linalg.norm(M, axis=1, keepdims=True) + 1e-9)
 
-# ---------------------------------------------------------------- Aranca knowledge index
 def _rd(name):
     p = f"{ARANCA_DIR}/aranca_{name}.csv"
     return pd.read_csv(p, dtype=str).fillna("") if os.path.exists(p) else pd.DataFrame()
@@ -50,7 +46,6 @@ def build_index():
     for _, r in sol.iterrows():
         add("solution", r["service_id"], r["solution_name"],
             f"{r['solution_name']} (Aranca service: {svc_name.get(r['service_id'], '')})")
-    GENERIC_TITLES = {"our approach", "impact", "approach", "overview", "benefits", "outcome", "outcomes"}
     for _, r in _rd("capabilities").iterrows():
         if r["capability"].strip().lower() in GENERIC_TITLES:
             continue
@@ -86,7 +81,6 @@ def _index():
     return _idx
 
 def match_many(texts, k=4):
-    """Closest Aranca offerings per text: [[{kind,sid,title,score}, ...], ...]"""
     A, meta = _index()
     if not len(A) or not texts:
         return [[] for _ in texts]
@@ -107,7 +101,6 @@ def match_many(texts, k=4):
     return out
 
 def top_services(matches, n=2, min_score=0.45):
-    """Deterministic service-line mapping from retrieval (no LLM)."""
     agg = {}
     for m in matches:
         if m["sid"] and m["score"] >= min_score:
@@ -115,12 +108,10 @@ def top_services(matches, n=2, min_score=0.45):
     return [s for s, _ in sorted(agg.items(), key=lambda x: -x[1])[:n]]
 
 def brief(matches, n=2):
-    """Short text for an LLM prompt: which Aranca offerings this development touches."""
     _, meta = _index()
     parts = [f"{meta['svc'].get(m['sid'], m['kind'])}: {m['title'][:70]}" for m in matches[:n] if m["score"] >= 0.4]
     return "; ".join(parts)
 
-# ---------------------------------------------------------------- stored items (for Ask the Agent)
 REGION_WORDS = {"KSA": ["saudi", "ksa", "riyadh", "jeddah", "gulf", "gcc"],
                 "UAE": ["uae", "dubai", "abu dhabi", "emirates", "gulf", "gcc"],
                 "Japan": ["japan", "japanese", "tokyo"], "India": ["india", "indian", "mumbai", "delhi"],
@@ -200,7 +191,7 @@ def retrieve(question, k=8):
             mask &= df["company"].isin(comps)
     elif mask.sum() < 3:
         mask = pd.Series(True, index=df.index)
-    sub = df[mask].copy()                    # <-- this line was missing
+    sub = df[mask].copy()
     if sub.empty:
         return sub
     sub = sub.drop_duplicates(subset=["company", "summary"])
@@ -213,7 +204,6 @@ def retrieve(question, k=8):
     return ranked.groupby("company", sort=False).head(3).head(k)
 
 def answer(question, k=8):
-    """-> {"answer": str, "sources": [ {company, region, date, summary, url, aranca} ]}"""
     hits = retrieve(question, k)
     if hits.empty:
         return {"answer": "No stored developments match that question yet.", "sources": []}
@@ -225,13 +215,13 @@ def answer(question, k=8):
                     for i, s in enumerate(src, 1))
     try:
         import llm
-        out = llm.ask("fast", f"""Answer the question using ONLY the numbered developments below. Cite sources as [n]. Where useful, say which Aranca offering is affected (given in the text). If they do not answer the question, say so.
+        out = llm.ask("fast", f"""Answer the question using ONLY the numbered developments below. Describe blog posts and reports as publications, and only call deals, hires, launches and M&A announcements. Cite sources as [n]. Where useful, say which Aranca offering is affected (given in the text). If they do not answer the question, say so.
 Return JSON {{"answer": "..."}}
 QUESTION: {question}
 DEVELOPMENTS:
 {ctx}""")
         text = out.get("answer") or "No answer returned."
-    except BaseException as e:               # SystemExit (no provider) or Exhausted (limits)
+    except BaseException as e:
         text = f"LLM unavailable ({str(e)[:60]}). Matching developments are listed below."
     return {"answer": text, "sources": src}
 

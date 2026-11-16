@@ -10,15 +10,14 @@ from rapidfuzz import fuzz
 LOOKBACK_DAYS = int(os.getenv("LOOKBACK_DAYS", "30"))   # 30 for a seed run, 2 for daily runs
 MAX_SITEMAP_ITEMS = 10                                   # per firm per run
 DB = os.getenv("CI_DB", "data/ci.db")
-SPEC_F = "data/monitor_specs.json"                       # written by discover_v3.py
-ONLY = [x.strip().lower() for x in os.getenv("ONLY", "").split(",") if x.strip()]  # test a few firms
+SPEC_F = "data/monitor_specs.json"
+ONLY = [x.strip().lower() for x in os.getenv("ONLY", "").split(",") if x.strip()]
 UA = {"User-Agent": "Mozilla/5.0 (compatible; AranCI-Agent/1.0)"}
-TAVILY_NEWS = os.getenv("TAVILY_NEWS") == "1"             # fallback for firms with no Google News hits
-TAVILY_MAX = int(os.getenv("TAVILY_MAX", "15"))           # max Tavily searches (credits) per run
-GOOGLE = {"streak": 0, "off": False}                       # auto-disabled when Google blocks us
+TAVILY_NEWS = os.getenv("TAVILY_NEWS") == "1"
+TAVILY_MAX = int(os.getenv("TAVILY_MAX", "15"))
+GOOGLE = {"streak": 0, "off": False}
 NEWS_STATS = {"requests": 0, "http_fail": 0, "codes": set(), "raw": 0, "dated": 0, "matched": 0}
 
-# Google News editions per region: (hl, gl, ceid, language key)
 EDITIONS = {
     "US":    [("en-US", "US", "US:en", "en")],
     "India": [("en-IN", "IN", "IN:en", "en")],
@@ -26,7 +25,6 @@ EDITIONS = {
     "KSA":   [("en", "SA", "SA:en", "en"), ("ar", "SA", "SA:ar", "ar")],
     "Japan": [("en", "JP", "JP:en", "en"), ("ja", "JP", "JP:ja", "ja")],
 }
-# non-English topic queries (English ones come from the spec's news_queries)
 TOPICS = {
     "ja": {"M&A": "買収 OR 合併 OR 出資 OR 資金調達",
            "Deal": "提携 OR 協業 OR 契約 OR 受注 OR 就任",
@@ -36,7 +34,7 @@ TOPICS = {
            "Business Update": "إطلاق OR توسع OR افتتاح OR نمو"},
 }
 TOPIC_MAP = {"deals": "Deal", "m_and_a": "M&A", "business": "Business Update", "digital": "Digital Presence"}
-FALLBACK_Q = {  # used when a firm has no spec
+FALLBACK_Q = {
     "Deal": "partnership OR client OR contract OR wins OR appointed OR mandate",
     "M&A": "acquisition OR acquires OR merger OR investment OR funding",
     "Business Update": "launches OR expands OR opens OR growth OR revenue OR hires OR new office"}
@@ -62,7 +60,6 @@ CREATE TABLE IF NOT EXISTS pages(url TEXT PRIMARY KEY, hash TEXT, text TEXT, che
 CREATE TABLE IF NOT EXISTS runs(ts TEXT, company TEXT, fetched INT, kept INT);
 CREATE TABLE IF NOT EXISTS sitemap_seen(url TEXT PRIMARY KEY, site TEXT, first_seen TEXT);
 """)
-# migration: tags that the report/LLM stage uses for segment + practice-leader views
 _cols = {r[1] for r in con.execute("PRAGMA table_info(items)")}
 for _c in ("service_ids", "overlap_type", "lang"):
     if _c not in _cols:
@@ -70,13 +67,12 @@ for _c in ("service_ids", "overlap_type", "lang"):
 con.commit()
 
 # ---------------- helpers ----------------
-def norm(s): return re.sub(r"[\W_]+", "", (s or "").lower())      # unicode-safe
+def norm(s): return re.sub(r"[\W_]+", "", (s or "").lower())
 def hid(url): return hashlib.md5(url.split("#")[0].encode()).hexdigest()
 def now_iso(): return datetime.now(timezone.utc).isoformat()
 
 SLD = {"co", "com", "org", "net", "gov", "ac", "edu", "or", "ne"}
 def canon(u):
-    """Same registered-domain logic as discover_v3.py, so spec keys match."""
     d = urlparse(u if "//" in (u or "") else "//" + (u or "")).netloc.lower().removeprefix("www.").split(":")[0]
     parts = d.split(".")
     if len(parts) <= 2:
@@ -114,9 +110,8 @@ def _has_seq(tokens, sub):
     return bool(n) and any(tokens[i:i + n] == sub for i in range(len(tokens) - n + 1))
 
 def mentions(text, aliases):
-    """Entity resolution: the firm (any alias) must appear as whole words (punctuation-insensitive,
-    so 'M+A Squared' matches 'M&A Squared'). Short one-word names also need business context,
-    to avoid look-alike names. Non-ASCII aliases (Japanese/Arabic) use plain substring match."""
+    """The firm (any alias) must appear as whole words. Short one-word names also need business context.
+    Non-ASCII aliases (Japanese/Arabic) use plain substring match."""
     t = (text or "").lower()
     toks = re.findall(r"\w+", t)
     for a in aliases:
@@ -138,7 +133,7 @@ def load_recent():
         recent_titles.setdefault(c, []).append(t)
 
 def save(item):
-    if not item["published"]:                      # no publication date -> not reportable
+    if not item["published"]:
         return False
     if con.execute("SELECT 1 FROM items WHERE id=?", (item["id"],)).fetchone():
         return False
@@ -155,7 +150,7 @@ def save(item):
                  item.get("overlap_type", ""), item.get("lang", "")))
     return True
 
-# ---------------- source 1: Google News RSS (multi-language, queries from the spec) ----------------
+# ---------------- source 1: Google News RSS ----------------
 def news_items(c, cutoff):
     name, region, names = c["name"], c["region"], c["aliases"]
     qname = " OR ".join(f'"{n}"' for n in names[:3])
@@ -194,7 +189,7 @@ def news_items(c, cutoff):
                 if not d or d < cutoff:
                     continue
                 NEWS_STATS["dated"] += 1
-                if not mentions(title + " " + snip, names):            # firm must be mentioned
+                if not mentions(title + " " + snip, names):
                     continue
                 NEWS_STATS["matched"] += 1
                 h = hint(title)
@@ -205,7 +200,7 @@ def news_items(c, cutoff):
             time.sleep(0.4)
     return out
 
-# ---------------- source 1b (optional): Tavily news search, only for firms Google News missed ----------------
+# ---------------- source 1b: Tavily news (optional) ----------------
 _tav, _tav_used = None, 0
 def tavily_news(c, cutoff):
     global _tav, _tav_used
@@ -231,7 +226,7 @@ def tavily_news(c, cutoff):
             try:
                 d = datetime.fromisoformat(raw.replace("Z", "+00:00"))
             except Exception:
-                continue                                   # no publication date -> not reportable
+                continue
         d = d if d.tzinfo else d.replace(tzinfo=timezone.utc)
         title, snip = clean(r.get("title")), clean(r.get("content"))
         if d < cutoff or not mentions(title + " " + snip, c["aliases"]):
@@ -241,7 +236,7 @@ def tavily_news(c, cutoff):
                         category_hint=hint(title), source_type="search_news", lang="en"))
     return out
 
-# ---------------- source 1b: free news fallbacks (Bing News RSS -> DuckDuckGo news -> Tavily) ----------------
+# ---------------- free news fallbacks: Bing News RSS -> DuckDuckGo -> Tavily ----------------
 def _item(c, title, snip, url, d, publisher, src, lang="en"):
     h = hint(title)
     return dict(id=hid(url), company=c["name"], region=c["region"], title=title, snippet=snip,
@@ -250,7 +245,6 @@ def _item(c, title, snip, url, d, publisher, src, lang="en"):
                 source_type=src, lang=lang)
 
 def _real_url(link):
-    """Bing wraps article links in a redirect: .../apiclick.aspx?...&url=<real>&..."""
     q = parse_qs(urlparse(link).query)
     return q["url"][0] if q.get("url") else link
 
@@ -287,7 +281,7 @@ def ddg_news(c, cutoff):
         try:
             d = datetime.fromisoformat(str(r.get("date", "")).replace("Z", "+00:00"))
         except Exception:
-            continue                                       # no publication date -> not reportable
+            continue
         d = d if d.tzinfo else d.replace(tzinfo=timezone.utc)
         title, snip = clean(r.get("title")), clean(r.get("body"))
         if d < cutoff or not mentions(title + " " + snip, c["aliases"]):
@@ -297,7 +291,6 @@ def ddg_news(c, cutoff):
     return out
 
 def fallback_news(c, cutoff):
-    """Try each free source in turn; stop at the first one that finds something."""
     for fn in (bing_news, ddg_news, tavily_news):
         try:
             got = fn(c, cutoff)
@@ -308,7 +301,7 @@ def fallback_news(c, cutoff):
             return got
     return []
 
-# ---------------- source 2: RSS feed (from the spec, else discovered on the homepage) ----------------
+# ---------------- source 2: RSS feed ----------------
 def site_feed_items(c, cutoff):
     name, region, site = c["name"], c["region"], c["url"]
     feeds = {c["rss"]} if c.get("rss") else set()
@@ -345,7 +338,6 @@ def _lastmod(s):
         return None
 
 def read_sitemap_urls(site):
-    """Return {url: lastmod_datetime_or_None} from robots.txt / common sitemap paths."""
     base = site.rstrip("/")
     queue, seen, urls = [], set(), {}
     robots = get(base + "/robots.txt", html_only=False)
@@ -374,7 +366,7 @@ def read_sitemap_urls(site):
                 if loc:
                     urls[loc[0]] = _lastmod(lm[0]) if lm else None
         if urls:
-            break                                        # first working sitemap is enough
+            break
     return urls
 
 def page_meta(url):
@@ -408,14 +400,14 @@ def sitemap_items(c, cutoff):
         if STATIC_EXT.search(u) or not CONTENT_PATH.search(path):
             continue
         if len([p for p in path.split("/") if p]) < 2:
-            continue                                       # listing pages, not articles
+            continue
         lm = urls[u]
         if lm:
             if lm < cutoff:
                 continue
             cands.append((lm, u))
         elif not first_run:
-            cands.append((now, u))                         # no date: new since last run
+            cands.append((now, u))
     cands.sort(reverse=True)
     out = []
     for pub, u in cands[:MAX_SITEMAP_ITEMS]:
@@ -428,11 +420,11 @@ def sitemap_items(c, cutoff):
         time.sleep(0.3)
     return out
 
-# ---------------- source 4: page-change detection (home + blog/press from the spec) ----------------
+# ---------------- source 4: page-change detection ----------------
 def page_changes(c, cutoff=None):
     name, region, site = c["name"], c["region"], c["url"]
     urls = [site] + [c[k] for k in ("blog", "press") if c.get(k)]
-    if len(urls) == 1:                                     # no spec: fall back to common paths
+    if len(urls) == 1:
         urls = [site.rstrip("/") + p for p in PAGES]
     out = []
     for url in dict.fromkeys(urls):
@@ -448,7 +440,7 @@ def page_changes(c, cutoff=None):
         if row and row[0] != h:
             old = set(row[1].splitlines())
             added = [l.strip() for l in text.splitlines() if len(l.strip()) >= 30 and l not in old]
-            if sum(map(len, added)) >= 120:                # ignore tiny edits (counters, dates, banners)
+            if sum(map(len, added)) >= 120:
                 out.append(dict(id=hid(url + h), company=name, region=region,
                                 title=f"Website updated: {urlparse(url).path or '/'}",
                                 snippet=" ".join(added)[:500], publisher=urlparse(site).netloc,
@@ -458,49 +450,12 @@ def page_changes(c, cutoff=None):
         time.sleep(0.3)
     return out
 
-# ---------------- firm context from competitors.csv + monitor_specs.json ----------------
-# ---------------- source: LinkedIn posts (public search only, no login, no scraping of linkedin.com) ----------------
-LINKEDIN = os.getenv("LINKEDIN", "1") == "1"
-LI_ID = re.compile(r"(?:activity|ugcPost|share)[-:](\d{16,19})")
-
-def linkedin_date(url):
-    """LinkedIn post ids embed a millisecond timestamp in their top bits: ts_ms = id >> 22.
-    This gives a real publication date without opening LinkedIn. None if the url has no post id."""
-    m = LI_ID.search(url or "")
-    if not m:
-        return None
-    try:
-        d = datetime.fromtimestamp((int(m.group(1)) >> 22) / 1000, tz=timezone.utc)
-    except Exception:
-        return None
-    return d if datetime(2015, 1, 1, tzinfo=timezone.utc) < d <= datetime.now(timezone.utc) + timedelta(days=1) else None
-
-def linkedin_items(c, cutoff):
-    """Public LinkedIn posts that mention the firm, found through the search engine (site:linkedin.com/posts)."""
-    if not LINKEDIN:
-        return []
-    try:
-        from ddgs import DDGS
-        res = DDGS().text(f'site:linkedin.com/posts "{c["aliases"][0]}"', max_results=10,
-                          timelimit="d" if LOOKBACK_DAYS <= 1 else "w" if LOOKBACK_DAYS <= 7 else "m")
-    except Exception:
-        return []
-    out = []
-    for r in res or []:
-        url = r.get("href") or r.get("url") or ""
-        d = linkedin_date(url)
-        title, snip = clean(r.get("title")), clean(r.get("body"))
-        if not d or d < cutoff or "linkedin.com" not in url or not mentions(title + " " + snip, c["aliases"]):
-            continue
-        out.append(_item(c, title, snip, url.split("?")[0], d, "LinkedIn", "linkedin"))
-    time.sleep(1)
-    return out
-
+# ---------------- firm context ----------------
 def load_specs():
     try:
         return json.load(open(SPEC_F, encoding="utf-8"))
     except Exception:
-        print(f"WARNING: {SPEC_F} not found -> falling back to firm names only. Run discover_v3.py first.")
+        print(f"WARNING: {SPEC_F} not found -> falling back to firm names only.")
         return {}
 
 def build_firm(row, specs):
@@ -530,7 +485,7 @@ if __name__ == "__main__":
     load_recent()
     cutoff = datetime.now(timezone.utc) - timedelta(days=LOOKBACK_DAYS)
     SOURCES = [("news", news_items), ("feed", site_feed_items),
-               ("sitemap", sitemap_items), ("pagechg", page_changes), ("linkedin", linkedin_items)]
+               ("sitemap", sitemap_items), ("pagechg", page_changes)]
     tot = {s: 0 for s, _ in SOURCES}
     total_f = total_k = 0
 
@@ -546,12 +501,12 @@ if __name__ == "__main__":
             per[label] = len(got)
             tot[label] += len(got)
             items += got
-            if label == "news" and not got:                # Google News empty/blocked -> free fallbacks
+            if label == "news" and not got:
                 fb = fallback_news(c, cutoff)
                 per["fallback"] = len(fb)
                 tot["fallback"] = tot.get("fallback", 0) + len(fb)
                 items += fb
-        for i in items:                                    # tags for segment / practice-leader views
+        for i in items:
             i["service_ids"], i["overlap_type"] = c["service_ids"], c["overlap_type"]
         kept = sum(save(i) for i in items)
         con.execute("INSERT INTO runs VALUES(?,?,?,?)", (now_iso(), c["name"], len(items), kept))
@@ -566,9 +521,9 @@ if __name__ == "__main__":
     print(f"NEWS DIAGNOSTICS: requests={ns['requests']} http_fail={ns['http_fail']} codes={sorted(map(str, ns['codes']))} "
           f"| feed entries={ns['raw']} -> within lookback={ns['dated']} -> mention firm={ns['matched']}")
     if ns["requests"] and ns["http_fail"] >= ns["requests"] * 0.5:
-        print("  -> Google News is blocking this machine (see codes): Bing/DuckDuckGo fallbacks were used instead.")
+        print("  -> Google News is blocking this machine: Bing/DuckDuckGo fallbacks were used instead.")
     elif ns["raw"] == 0:
-        print("  -> Google News answered but returned no entries for these firms (low press coverage).")
+        print("  -> Google News answered but returned no entries (low press coverage).")
     elif ns["matched"] == 0:
-        print("  -> Entries exist but none mention the firm by name (queries are too generic, or no real coverage).")
+        print("  -> Entries exist but none mention the firm by name.")
     print(pd.read_sql("SELECT region, source_type, COUNT(*) n FROM items GROUP BY 1,2 ORDER BY 1,3 DESC", con))

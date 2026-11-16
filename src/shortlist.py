@@ -1,10 +1,5 @@
 """Pick approved=yes firms per region: relevance score + monitorability + recent activity.
-
-  python src/shortlist.py                 # fill each region up to PER_REGION, keep existing "yes"
-  DRY_RUN=1 python src/shortlist.py       # preview only
-  PER_REGION=8 python src/shortlist.py
-  LOCK_NO=1 python src/shortlist.py       # treat every existing "no" as a final human decision
-  RESET=1 python src/shortlist.py         # clear all yes/no and decide from scratch
+  DRY_RUN=1 python src/shortlist.py | PER_REGION=8 | LOCK_NO=1 | RESET=1
 """
 import os, re, shutil, sqlite3
 from datetime import datetime, timedelta, timezone
@@ -24,11 +19,13 @@ MON_BONUS = {"excellent": 10, "good": 6, "moderate": 2, "unknown": -3, "": -3}
 BLOCK_NAMES = ["imarc", "gmi research", "techsci", "cerulli", "tokyo venture", "advisory corp",
                "saudi mergers", "precedence research", "peak ventures", "india market entry",
                "grand view", "spherical insights", "stratview", "360iresearch", "coherent market",
-               "ken research", "business research company", "marketsandmarkets", "statista"]
+               "ken research", "business research company", "marketsandmarkets", "statista",
+               "duckercarlisle"]
 BLOCK_ROOTS = ("grandview", "sphericalinsights", "stratview", "360iresearch", "coherentmi",
                "kenresearch", "imarc", "thebusinessresearch", "marketsandmarkets", "statista",
                "precedenceresearch", "gmiresearch", "techsciresearch", "cerulli", "mordor",
-               "bdo", "fticonsulting", "ipsos", "kantar", "protiviti", "bearingpoint", "icf")
+               "bdo", "fticonsulting", "ipsos", "kantar", "protiviti", "bearingpoint", "icf",
+               "duckercarlisle")
 HEADLINE = re.compile(r"market research|strategy consulting|home|welcome|maximizing|consulting firm|"
                       r"company in|reports|homepage|about us", re.I)
 
@@ -51,7 +48,6 @@ def eligible(r):
     return (not blocked(r) and r["firm_type"] in OK_TYPES and r["size_class"] != "large"
             and r["monitoring_status"] != "poor")
 
-# firms that actually produced items recently (collector evidence)
 active = set()
 try:
     con = sqlite3.connect(DB)
@@ -69,16 +65,13 @@ df["_ok"] = df.apply(eligible, axis=1)
 df["_dom"] = df["url"].map(root)
 
 changes = []
-# 1) demote blocked firms that are currently approved
 for i, r in df[df["approved"].str.lower() == "yes"].iterrows():
     if blocked(r) or r["monitoring_status"] == "poor":
         df.at[i, "approved"] = "no"
         changes.append(f"demoted  {r['name']} [{r['region']}]")
-# 2) block list always wins
 for i, r in df.iterrows():
     if blocked(r) and r["approved"].lower() != "no":
         df.at[i, "approved"] = "no"
-# 3) fill each region up to PER_REGION (existing yes are kept and counted)
 for region, g in df.groupby("region"):
     have = int((g["approved"].str.lower() == "yes").sum())
     taken = set(g[g["approved"].str.lower() == "yes"]["_dom"])

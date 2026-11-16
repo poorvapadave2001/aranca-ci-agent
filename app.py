@@ -15,9 +15,6 @@ URG_BADGE = {"high": "🔴 HIGH", "med": "🟠 MEDIUM", "low": "🟢 LOW"}
 CAT_ICON = {"M&A": "🤝", "Deal": "📝", "Business Update": "📈", "Digital Presence": "🌐", "Noise": "🔇"}
 CAT_W = {"M&A": 4, "Deal": 3, "Business Update": 2, "Digital Presence": 1, "Noise": 0}
 HINT_REL = {"M&A": 3, "Deal": 3, "Business Update": 2, "Digital Presence": 1}
-SYN = {"ksa": ["saudi", "riyadh", "jeddah"], "uae": ["dubai", "abu dhabi", "emirates", "gulf", "gcc"],
-       "japan": ["japanese", "tokyo"], "india": ["indian", "mumbai", "delhi"],
-       "us": ["america", "united states"]}
 
 
 def load_json(p):
@@ -41,7 +38,6 @@ def svc_label(ids):
     return ", ".join(out)
 
 
-# ------------------------- data -------------------------
 @st.cache_data(ttl=60)
 def load():
     if not os.path.exists(DB):
@@ -53,7 +49,7 @@ def load():
                    n.cat, n.rel, n.summary, n.why, n.svc, n.urg, n.state, n.analyzed_at
             FROM items i LEFT JOIN ci_insights n ON n.id = i.id
             WHERE COALESCE(n.state, '') != 'skipped'""", con)
-    except Exception:       # ci_insights not created yet: show collection hints only
+    except Exception:
         try:
             df = pd.read_sql("SELECT id, company, region, title, url, published, source_type, publisher, "
                              "category_hint, service_ids, snippet FROM items", con)
@@ -72,12 +68,11 @@ def load():
     df.loc[~df["category"].isin(CAT_ICON), "category"] = "Digital Presence"
     df["rel"] = pd.to_numeric(df["rel"], errors="coerce")
     df["rel"] = df["rel"].where(df["analyzed"], df["category"].map(HINT_REL)).fillna(1).astype(int)
-    df["summary"] = df["summary"].where(df["analyzed"], df["snippet"].fillna("").str[:180])
+    df["summary"] = df["summary"].where(df["analyzed"], df["snippet"].fillna("").str[:180]).fillna("")
     df["why"] = df["why"].where(df["analyzed"], "").fillna("")
     df["urg"] = df["urg"].where(df["urg"].isin(URG_W), "low")
     df["svc_ids"] = df["svc"].where(df["analyzed"] & df["svc"].fillna("").ne(""), df["service_ids"]).fillna("")
     df["priority"] = df["rel"] * 10 + df["urg"].map(URG_W).fillna(1) * 3 + df["category"].map(CAT_W).fillna(0)
-    # near-duplicate removal per company (same story from several sources), best copy first
     df = df.sort_values(["analyzed", "rel", "published"], ascending=[False, False, False])
     seen, keep = {}, []
     for idx, r in df.iterrows():
@@ -140,7 +135,7 @@ if os.path.exists("data/competitors.csv"):
 tab1, tab2, tab3, tab4, tab5 = st.tabs(["📰 Today's Brief", "🔎 Explorer", "🏢 Competitor Profiles",
                                          "🧭 By Practice Leader", "💬 Ask the Agent"])
 
-# ------------------------- tab 1: brief -------------------------
+# ------------------------- tab 1 -------------------------
 with tab1:
     st.header("Today's Brief")
     days = st.select_slider("Time window (days)", [1, 2, 7, 14, 30, 60, 90], value=30)
@@ -176,7 +171,7 @@ with tab1:
                     f"Source: {r.source_type}" + (f" - {r.publisher}" if r.publisher else ""),
                     "" if r.analyzed else "not yet analysed"] if x))
 
-# ------------------------- tab 2: explorer -------------------------
+# ------------------------- tab 2 -------------------------
 with tab2:
     st.header("Explorer")
     f1, f2, f3, f4 = st.columns(4)
@@ -201,7 +196,7 @@ with tab2:
                  column_config={"url": st.column_config.LinkColumn("Source", display_text="open")})
     st.download_button("⬇️ Export CSV", show.to_csv(index=False), file_name="aranca_ci_export.csv")
 
-# ------------------------- tab 3: profiles -------------------------
+# ------------------------- tab 3 -------------------------
 with tab3:
     st.header("Competitor Profiles")
     if ins.empty:
@@ -231,7 +226,7 @@ with tab3:
             st.markdown(f"**{r.published:%d %b %Y}** · {CAT_ICON.get(r.category, '•')} {r.category} · "
                         f"rel {r.rel}/5  \n{r.summary}{link}")
 
-# ------------------------- tab 4: by practice leader -------------------------
+# ------------------------- tab 4 -------------------------
 with tab4:
     st.header("By service line / Practice Leader")
     rows = []
@@ -255,59 +250,17 @@ with tab4:
                     st.markdown(f"**{r.company}** ({r.region}) · {r.category} · {r.published:%d %b} · rel {r.rel}/5  \n"
                                 f"{r.summary} [source]({r.url})")
 
-# ------------------------- tab 5: ask the agent -------------------------
+# ------------------------- tab 5: RAG -------------------------
 with tab5:
     st.header("Ask the Agent")
     st.caption("Semantic retrieval over sourced items, grounded in Aranca's service catalogue.")
     question = st.text_input("Example: Who is expanding in the Gulf this month?")
-
-    def retrieve(question, k=8):
-        """Keyword fallback: works without embeddings (no model download, no extra dependencies)."""
-        ql = question.lower()
-        tokens = {w for w in ql.replace("?", " ").replace(",", " ").split() if len(w) > 2}
-        for key, vs in SYN.items():
-            if key in tokens or any(v in ql for v in vs):
-                tokens |= {key, *vs}
-        blob = (ins.company.fillna("") + " " + ins.region.fillna("") + " " + ins.category.fillna("") + " "
-                + ins.title.fillna("") + " " + ins.summary.fillna("") + " " + ins.why.fillna("")).str.lower()
-        score = blob.apply(lambda t: sum(1 for w in tokens if w in t))
-        out = ins.assign(_s=score + ins.priority / 100)
-        return out[score > 0].sort_values("_s", ascending=False).head(k)
-
-    # one button (a second identical st.button raised StreamlitDuplicateElementId)
-    if st.button("Ask", key="ask_agent") and question:
-        res = None
-        try:                                    # 1) semantic retrieval: local embeddings, no API tokens
-            import rag
-            res = rag.answer(question)
-        except BaseException as e:              # embeddings unavailable (model download, memory), offline, limits
-            st.caption(f"Semantic search unavailable ({str(e)[:60]}); using keyword retrieval.")
-        if res and res.get("sources"):
-            st.markdown(res["answer"])
-            with st.expander("Sources", expanded=True):
-                for i, s in enumerate(res["sources"], 1):
-                    st.markdown(f"[{i}] **{s['company']}** ({s['region']}, {s['date']}): {s['summary']} "
-                                f"[link]({s['url']})" + (f"  \n*Aranca offering affected: {s['aranca']}*" if s["aranca"] else ""))
-        else:                                   # 2) keyword retrieval + LLM answer, or just the matches
-            hits = retrieve(question)
-            if hits.empty:
-                st.warning("No matching items found.")
-            else:
-                ctx = "\n".join(f"[{i + 1}] {r.company} ({r.region}, {r.published:%Y-%m-%d}, {r.category}): "
-                                f"{r.summary} | Why it matters: {r.why}" for i, (_, r) in enumerate(hits.iterrows()))
-                try:
-                    from llm import ask
-                    out = ask("fast", f"""Answer the question using ONLY the numbered items below.
-Cite sources as [n]. If the items don't answer it, say so.
-Return JSON: {{"answer": "..."}}
-
-QUESTION: {question}
-
-ITEMS:
-{ctx}""")
-                    st.markdown(out.get("answer", "No answer returned."))
-                except BaseException as e:   # SystemExit if no provider, Exhausted if limits hit
-                    st.warning(f"LLM unavailable ({str(e)[:80]}). Showing the matching items instead.")
-                with st.expander("Sources"):
-                    for i, (_, r) in enumerate(hits.iterrows()):
-                        st.markdown(f"[{i + 1}] **{r.company}** · {r.published:%d %b %Y} · {r.summary} [link]({r.url})")
+    if st.button("Ask") and question:
+        import rag
+        res = rag.answer(question)
+        st.markdown(res["answer"])
+        with st.expander("Sources", expanded=True):
+            for i, s in enumerate(res["sources"], 1):
+                st.markdown(f"[{i}] **{s['company']}** ({s['region']}, {s['date']}): {s['summary']} "
+                            f"[link]({s['url']})"
+                            + (f"  \n*Aranca offering affected: {s['aranca']}*" if s["aranca"] else ""))
